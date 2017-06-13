@@ -84,8 +84,8 @@
   list-style-type: none;
   margin-top: $l-header-nav-height;
   opacity: 0;
-  -webkit-transition: opacity $transition-duration;
-  transition: opacity $transition-duration;
+  -webkit-transition: opacity ($transition-duration * .5);
+  transition: opacity ($transition-duration * .5);
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu ul {
