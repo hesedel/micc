@@ -2,12 +2,12 @@
 
 @mixin breakpoint($breakpoint) {
   @if phone == $breakpoint {
-    @media (min-width: 100px) {
+    @media (min-width: 300px) {
       @content;
     }
   }
   @elseif tablet == $breakpoint {
-    @media (min-width: 200px) {
+    @media (min-width: 500px) {
       @content;
     }
   }
