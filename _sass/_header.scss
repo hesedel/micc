@@ -17,7 +17,7 @@
 }
 
 .l-header-menu {
-  background-image: linear-gradient(to top, rgba(red, 0) 25%, rgba(red, 1));
+  background-image: linear-gradient(to top, rgba(red, 0), rgba(red, 1) ($l-header-height + $l-header-nav-height));
   bottom: 100%;
   display: block;
   left: 0;
@@ -32,7 +32,7 @@
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu {
-  bottom: -25%;
+  bottom: -($l-header-height + $l-header-nav-height);
 }
 
 .l-header-menu ul {
