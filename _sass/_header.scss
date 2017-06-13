@@ -17,7 +17,7 @@
 }
 
 .l-header-menu {
-  background-image: linear-gradient(to top, rgba(red, 0), rgba(red, 1) ($l-header-height + $l-header-nav-height));
+  background-image: linear-gradient(to top, rgba($body-background-color, 0), rgba($body-background-color, 1) ($l-header-height + $l-header-nav-height));
   bottom: 100%;
   display: block;
   left: 0;
