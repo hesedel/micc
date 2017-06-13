@@ -14,6 +14,8 @@
 <div class="l-header-shadow"></div>
 
 <nav class="l-header-nav">
+  <div class="l-header-nav__fade"></div>
+  
   <ul>
     <li{% if homeurl == pageurl %} class="is-active"{% endif %}>
       <a href="{{ homeurl }}">Home</a>
@@ -27,8 +29,6 @@
 <div class="l-header-menu-backdrop"></div>
 
 <nav class="l-header-menu">
-  <div class="l-header-menu__fade"></div>
-
   <ul>
     <li{% if homeurl == pageurl %} class="is-active"{% endif %}>
       <a href="{{ homeurl }}">Home</a>
