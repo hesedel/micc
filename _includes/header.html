@@ -8,13 +8,16 @@
 <input type="checkbox">
 
 <header class="l-header">
-  Header
+  Header {{page.url}}
 </header>
 
 <nav class="l-header-nav">
   <ul>
     <li{% if site.baseurl + '/' == site.baseurl + page.url %} class="is-active"{% endif %}>
       <a href="{{ site.baseurl }}">Home</a>
+    </li>
+    <li{% if site.baseurl + '/about' == site.baseurl + page.url %} class="is-active"{% endif %}>
+      <a href="{{ site.baseurl }}/about">About</a>
     </li>
   </ul>
 </nav>
