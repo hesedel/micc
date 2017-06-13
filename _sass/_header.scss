@@ -1,9 +1,17 @@
+@import 'vars.header';
+
 .l-header {
 }
 
 .l-header-nav {
 }
 
+.l-header-menu-checkbox:checked ~ .l-header-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: $l-header-height;
+}
+
 .l-header-menu {
-  background-color: green;
+  background-color: red;
 }
