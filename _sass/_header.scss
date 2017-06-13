@@ -81,6 +81,15 @@
   transition: bottom $transition-duration $transition-duration;
 }
 
+.l-header-menu__fade {
+  background-image: linear-gradient(rgba($l-header-nav-background-color, 1), rgba($l-header-nav-background-color, 0));
+  height: $vertical-spacing-base;
+  margin-bottom: -$vertical-spacing-base;
+  position: -webkit-sticky;
+  position: sticky;
+  top: $l-header-height;
+}
+
 .l-header-menu ul {
   list-style-type: none;
   margin-top: $l-header-nav-height;
