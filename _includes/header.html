@@ -8,7 +8,7 @@
 <input type="checkbox">
 
 <header class="l-header">
-  Header {{site.baseurl}} {{page.url}} {{site.baseurl == page.url}}
+  Header {{site.baseurl}} {{page.url}} {% if site.baseurl == page.url %}yes{% endif %}
 </header>
 
 <nav class="l-header-nav">
