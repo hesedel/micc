@@ -1,5 +1,9 @@
 @import 'vars.header';
 
+.l-header-menu-checkbox {
+  display: none;
+}
+
 .l-header {
   background-color: $l-header-background-color;
 }
