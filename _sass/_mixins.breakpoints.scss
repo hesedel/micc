@@ -1,0 +1,19 @@
+@import 'vars.breakpoints';
+
+@mixin breakpoint($breakpoint) {
+  @if phone == $breakpoint {
+    @media (min-width: 100px) {
+      @content;
+    }
+  }
+  @elseif tablet == $breakpoint {
+    @media (min-width: 200px) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}
