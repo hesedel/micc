@@ -3,6 +3,16 @@
 .l-header {
 }
 
+.l-header-shadow {
+  background-image: linear-gradient(rgba(black, .1), rgba(black, 0));
+  height: 2px;
+  margin-bottom: -2px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: $l-header-height;
+  z-index: 2;
+}
+
 .l-header-nav {
   position: -webkit-sticky;
   position: sticky;
