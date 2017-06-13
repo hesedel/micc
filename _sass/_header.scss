@@ -52,7 +52,7 @@
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu-backdrop {
-  opacity: .1;
+  opacity: .25;
   -webkit-transition: opacity $transition-duration;
   transition: opacity $transition-duration;
   z-index: 1;
