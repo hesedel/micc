@@ -22,7 +22,7 @@
   display: block;
   left: 0;
   overflow: hidden;
-  padding-top: $l-header-height + $l-header-nav-height;
+  padding-top: $l-header-height;
   position: fixed;
   right: 0;
   top: 0;
@@ -37,4 +37,5 @@
 
 .l-header-menu ul {
   list-style-type: none;
+  margin-top: $l-header-nav-height;
 }
