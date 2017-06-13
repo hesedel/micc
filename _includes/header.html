@@ -2,13 +2,6 @@
 {% assign homeurl = site.baseurl | append: '/' %}
 {% assign abouturl = site.baseurl | append: '/about.html' %}
 
-<style>
-  {% capture critical %}
-    {% include header.scss %}
-  {% endcapture %}
-  {{ critical | scssify }}
-</style>
-
 <input id="l-header-menu-checkbox" type="checkbox">
 
 <header class="l-header">
