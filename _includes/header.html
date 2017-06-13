@@ -1,3 +1,7 @@
+{% assign pageurl = site.baseurl | append: page.url %}
+{% assign homeurl = site.baseurl | append: '/' %}
+{% assign abouturl = site.baseurl | append: '/about.html' %}
+
 <style>
   {% capture critical %}
     {% include header.scss %}
@@ -13,19 +17,22 @@
 
 <nav class="l-header-nav">
   <ul>
-    <li{% if site.baseurl | append: '/' == site.baseurl | append: page.url %} class="is-active"{% endif %}>
-      <a href="{{ site.baseurl }}">Home</a>
+    <li{% if homeurl == pageurl %} class="is-active"{% endif %}>
+      <a href="{{ homeurl }}">Home</a>
     </li>
-    <li{% if site.baseurl | append: '/about.html' == site.baseurl | append: page.url %} class="is-active"{% endif %}>
-      <a href="{{ site.baseurl }}/about">About</a>
+    <li{% if abouturl == pageurl %} class="is-active"{% endif %}>
+      <a href="{{ abouturl }}">About</a>
     </li>
   </ul>
 </nav>
 
 <nav class="l-header-menu">
   <ul>
-    <li>
-      <a href="{{ site.baseurl }}">Home</a>
+    <li{% if homeurl == pageurl %} class="is-active"{% endif %}>
+      <a href="{{ homeurl }}">Home</a>
+    </li>
+    <li{% if abouturl == pageurl %} class="is-active"{% endif %}>
+      <a href="{{ abouturl }}">About</a>
     </li>
   </ul>
 </nav>
