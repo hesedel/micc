@@ -2,7 +2,7 @@
 <html amp lang="en">
 <head>
 <meta charset="utf-8">
-<script async src="https://cdn.ampproject.org/v0.js"></script>
+<!--<script async src="https://cdn.ampproject.org/v0.js"></script>-->
 <link rel="canonical" href="{{ site.baseurl }}/">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
@@ -17,7 +17,9 @@
   var link = document.createElement('link');
   link.rel = 'stylesheet';
   link.href = '{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}';
-  document.head.appendChild(link);
+  setTimeout(function () {
+    document.head.appendChild(link);
+  }, 1);
   })(document);
 </script>
 
