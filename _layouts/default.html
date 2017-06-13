@@ -12,15 +12,6 @@
 <style amp-custom>
 {% capture critical %}{% include layout.scss %}{% include header.scss %}{% endcapture %}{{ critical | scssify }}</style>
 
-<script>
-(function (document) {
-var link = document.createElement('link');
-link.rel = 'stylesheet';
-link.href = '{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}';
-document.head.appendChild(link);
-})(document);
-</script>
-
 <!--
 <script type="application/ld+json">
 {
@@ -38,11 +29,25 @@ document.head.appendChild(link);
   
 <body>
 <div class="l-body">
+
 {% include header.html %}
+
 <main class="l-content">
+
 {{ content }}
+
 </main>
 </div>
+
 {% include footer.html %}
+
+<script>
+  (function (document) {
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = '{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}';
+  document.head.appendChild(link);
+  })(document);
+</script>
 </body>
 </html>
