@@ -90,6 +90,6 @@
 
 .l-header-menu-checkbox:checked ~ .l-header-menu ul {
   opacity: 1;
-  -webkit-transition: opacity $transition-duration ($transition-duration * 2);
-  transition: opacity $transition-duration ($transition-duration * 2);
+  -webkit-transition: opacity $transition-duration ($transition-duration * 1.5);
+  transition: opacity $transition-duration ($transition-duration * 1.5);
 }
