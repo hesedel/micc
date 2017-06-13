@@ -1,8 +1,8 @@
-@import 'vars.breakpoints';
+// @import 'vars.breakpoints';
 
 @mixin breakpoint($breakpoint) {
   @if phone == $breakpoint {
-    @media (min-width: $breakpoint-phone) {
+    @media (min-width: 320px) {
       @content;
     }
   }
