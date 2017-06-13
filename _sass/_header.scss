@@ -7,18 +7,29 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-//   -webkit-transform: translateY(0);
-//   transform: translateY(0);
   -webkit-transition: top .5s;
   transition: top .5s;
+  z-index: 2;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
   top: $l-header-height;
-//   -webkit-transform: translateY($l-header-height);
-//   transform: translateY($l-header-height);
 }
 
 .l-header-menu {
   background-color: red;
+  bottom: 0;
+  display: block;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: transform 1s;
+  z-index: -1;
+}
+
+.l-header-menu-checkbox:checked ~ .l-header-menu {
+  opacity: 1;
+  z-index: 1;
 }
