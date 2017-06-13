@@ -35,8 +35,8 @@
 }
 
 .l-header-menu {
-  background-image: -webkit-linear-gradient(bottom, rgba($body-background-color, 0), rgba($body-background-color, 1) ($l-header-height + $l-header-nav-height));
-  background-image: linear-gradient(to top, rgba($body-background-color, 0), rgba($body-background-color, 1) ($l-header-height + $l-header-nav-height));
+  background-image: -webkit-linear-gradient(bottom, rgba($l-header-nav-background-color, 0), rgba($l-header-nav-background-color, 1) ($l-header-height + $l-header-nav-height));
+  background-image: linear-gradient(to top, rgba($l-header-nav-background-color, 0), rgba($l-header-nav-background-color, 1) ($l-header-height + $l-header-nav-height));
   bottom: 100%;
   display: block;
   left: 0;
@@ -45,12 +45,14 @@
   position: fixed;
   right: 0;
   top: 0;
-  -webkit-transition: bottom $transition-duration;
-  transition: bottom $transition-duration;
+  -webkit-transition: background-image $transition-duration, bottom $transition-duration;
+  transition: bottom background-image $transition-duration, $transition-duration;
   z-index: 1;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu {
+    background-image: -webkit-linear-gradient(bottom, rgba($body-background-color, 0), rgba($body-background-color, 1) ($l-header-height + $l-header-nav-height));
+  background-image: linear-gradient(to top, rgba($body-background-color, 0), rgba($body-background-color, 1) ($l-header-height + $l-header-nav-height));
   bottom: -($l-header-height + $l-header-nav-height);
 }
 
