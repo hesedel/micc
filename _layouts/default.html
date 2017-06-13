@@ -12,7 +12,7 @@
 <style amp-custom>
 {% capture critical %}{% include layout.scss %}{% include header.scss %}{% endcapture %}{{ critical | scssify }}</style>
 
-<!--<link rel="stylesheet" href="{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}">-->
+<link rel="preload" href="{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}" onload="this.rel='stylesheet'">
 
 <!--
 <script type="application/ld+json">
