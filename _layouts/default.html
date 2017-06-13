@@ -46,7 +46,7 @@
   var link = document.createElement('link');
   link.rel = 'stylesheet';
   link.href = '{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}';
-  document.head.appendChild(link);
+  document.body.appendChild(link);
   })(document);
 </script>
 </body>
