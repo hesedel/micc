@@ -6,4 +6,6 @@
 
 .l-header {
   background-color: $l-header-background-color;
+  position: -webkit-sticky;
+  position: sticky;
 }
