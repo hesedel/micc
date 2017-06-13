@@ -42,14 +42,19 @@
   background-color: black;
   bottom: 0;
   left: 0;
-  opacity: .1;
+  opacity: 0;
   position: absolute;
   right: 0;
   top: 0;
   z-index: -1;
+  -webkit-transition: opacity $transition-duration $transition-duration, z-index 0s $transition-duration;
+  transition: opacity $transition-duration $transition-duration, z-index 0s $transition-duration;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu-backdrop {
+  opacity: .1;
+  -webkit-transition: opacity $transition-duration;
+  transition: opacity $transition-duration;
   z-index: 1;
 }
 
