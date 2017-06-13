@@ -24,12 +24,13 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  -webkit-transition: top $transition-duration;
-  transition: top $transition-duration;
+  -webkit-transition: background-color $transition-duration, top $transition-duration;
+  transition: background-color $transition-duration, top $transition-duration;
   z-index: 2;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
+  background-color: $body-background-color;
   top: $l-header-height;
 }
 
