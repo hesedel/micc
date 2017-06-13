@@ -5,7 +5,7 @@
         <title>{{ page.title }}</title>
         <style>
             {% capture critical %}
-              {% include_relative layout.scss %}
+              {% include /css/layouts/layout.scss %}
             {% endcapture %}
             {{ critical | scssify }}
         </style>
