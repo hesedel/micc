@@ -2,7 +2,7 @@
 
 @mixin breakpoint($breakpoint) {
   @if phone == $breakpoint {
-    @media (min-width: 300px) {
+    @media (min-width: $breakpoint-phone) {
       @content;
     }
   }
