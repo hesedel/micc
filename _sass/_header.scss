@@ -10,6 +10,7 @@
 }
 
 .l-header-shadow {
+  background-image: -webkit-linear-gradient(rgba(black, .1), rgba(black, 0));
   background-image: linear-gradient(rgba(black, .1), rgba(black, 0));
   height: 2px;
   margin-bottom: -2px;
@@ -33,6 +34,7 @@
 }
 
 .l-header-menu {
+  background-image: -webkit-linear-gradient(top, rgba($body-background-color, 0), rgba($body-background-color, 1) ($l-header-height + $l-header-nav-height));
   background-image: linear-gradient(to top, rgba($body-background-color, 0), rgba($body-background-color, 1) ($l-header-height + $l-header-nav-height));
   bottom: 100%;
   display: block;
