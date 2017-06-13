@@ -1,4 +1,4 @@
-// @import 'vars.breakpoints';
+@import 'vars.breakpoints';
 
 @mixin breakpoint($breakpoint) {
   @if phone == $breakpoint {
