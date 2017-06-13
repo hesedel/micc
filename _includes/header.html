@@ -8,15 +8,15 @@
 <input type="checkbox">
 
 <header class="l-header">
-  Header {{page.url + '-test'}}
+  Header {{page.url | append: '-test'}}
 </header>
 
 <nav class="l-header-nav">
   <ul>
-    <li{% if site.baseurl + '/' == site.baseurl + page.url %} class="is-active"{% endif %}>
+    <li{% if {{site.baseurl | append: '/'}} == {{site.baseurl | append: page.url}} %} class="is-active"{% endif %}>
       <a href="{{ site.baseurl }}">Home</a>
     </li>
-    <li{% if site.baseurl + '/about.html' == site.baseurl + page.url %} class="is-active"{% endif %}>
+    <li{% if {{site.baseurl | append: '/about.html'}} == {{site.baseurl | append: page.url}} %} class="is-active"{% endif %}>
       <a href="{{ site.baseurl }}/about">About</a>
     </li>
   </ul>
