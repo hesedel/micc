@@ -2,5 +2,22 @@
 ---
 
 @import 'vars';
+@import 'mixins';
+
+body {
+  background-color: red;
+  
+  @include breakpoint(phone) {
+    background-color: green;
+  }
+  
+  @include breakpoint(tablet) {
+    background-color: blue;
+  }
+  
+  @include breakpoint(700px) {
+    background-color: yellow;
+  }
+}
 
 @import 'header';
