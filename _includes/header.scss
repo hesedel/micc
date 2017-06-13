@@ -29,7 +29,8 @@
   margin-bottom: 0;
   margin-top: 0;
   overflow: hidden;
-  padding-left: 0;
+  padding-left: $horizontal-spacing-base;
+  padding-right: $horizontal-spacing-base;
 }
 
 .l-header-nav li {
