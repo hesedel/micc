@@ -14,6 +14,7 @@
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
+  top: -$l-header-height;
   -webkit-transform: translateY($l-header-height);
   transform: translateY($l-header-height);
 }
