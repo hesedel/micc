@@ -1,10 +1,8 @@
-{% comment %}
-{% assign pageurl = site.baseurl | append: page.url %}
-{% assign homeurl = site.baseurl | append: '/' %}
-{% assign abouturl = site.baseurl | append: '/about.html' %}
-{% endcomment %}
+{% assign pageurl = site.baseurl | append: page.url %}{% comment %}
+{% endcomment %}{% assign homeurl = site.baseurl | append: '/' %}{% comment %}
+{% endcomment %}{% assign abouturl = site.baseurl | append: '/about.html' %}{% comment %}
 
-<input class="l-header-menu-checkbox" id="l-header-menu-checkbox" type="checkbox">
+{% endcomment %}<input class="l-header-menu-checkbox" id="l-header-menu-checkbox" type="checkbox">
 
 <header class="l-header">
   <label for="l-header-menu-checkbox">Menu</label>
