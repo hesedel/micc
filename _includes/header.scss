@@ -41,6 +41,8 @@
   display: block;
   height: 100%;
   line-height: $l-header-nav-height;
+  padding-left: $horizontal-spacing-base;
+  padding-right: $horizontal-spacing-base;
   text-decoration: none;
 }
 
