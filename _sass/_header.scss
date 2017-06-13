@@ -4,6 +4,9 @@
 }
 
 .l-header-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   -webkit-transform: translateY(0);
   transform: translateY(0);
   -webkit-transition: transform .5s;
@@ -11,9 +14,6 @@
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   -webkit-transform: translateY($l-header-height);
   transform: translateY($l-header-height);
 }
