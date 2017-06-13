@@ -47,8 +47,8 @@
   right: 0;
   top: 0;
   z-index: -1;
-  -webkit-transition: opacity $transition-duration $transition-duration, z-index 0s $transition-duration;
-  transition: opacity $transition-duration $transition-duration, z-index 0s $transition-duration;
+  -webkit-transition: opacity $transition-duration $transition-duration, z-index 0s ($transition-duration * 2);
+  transition: opacity $transition-duration $transition-duration, z-index 0s ($transition-duration * 2);
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu-backdrop {
