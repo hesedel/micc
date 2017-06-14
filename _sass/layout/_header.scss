@@ -100,7 +100,7 @@
   opacity: 0;
   position: absolute;
   right: 0;
-  top: $l-header-height;
+  top: $l-header-height + $l-header-nav-height;
   -webkit-transition: opacity $transition-duration $transition-duration, z-index 0s ($transition-duration * 2);
   transition: opacity $transition-duration $transition-duration, z-index 0s ($transition-duration * 2);
   z-index: -1;
@@ -125,8 +125,8 @@
   position: fixed;
   right: 0;
   top: $l-header-height;
-  -webkit-transition: bottom $transition-duration;
-  transition: bottom $transition-duration;
+  -webkit-transition: background-color 0s $transition-duration, bottom $transition-duration;
+  transition: background-color 0s $transition-duration, bottom $transition-duration;
   z-index: 1;
 }
 
