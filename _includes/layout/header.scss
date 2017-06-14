@@ -8,6 +8,7 @@
 .l-header {
   background-color: $l-header-background-color;
   height: $l-header-height;
+  position: relative;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
