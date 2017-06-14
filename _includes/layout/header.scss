@@ -8,10 +8,12 @@
 .l-header {
   background-color: $l-header-background-color;
   height: $l-header-height;
+  left: 0;
   margin-bottom: -$l-header-height;
   position: fixed;
   position: -webkit-sticky;
   position: sticky;
+  right: 0;
   top: 0;
   z-index: 3;
 }
