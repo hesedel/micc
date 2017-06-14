@@ -38,23 +38,29 @@
   transition: background-color $transition-duration, top $transition-duration;
 }
 
-.l-header-nav__fade {
+.l-header-nav-fade {
+  height: $l-header-nav-height;
+  margin-bottom: $l-header-nav-height;
+//   -webkit-transition: opacity $transition-duration $transition-duration;
+//   transition: opacity $transition-duration $transition-duration;
+}
+
+.l-header-nav-fade::before {
+  content: '';
   background-image: linear-gradient(rgba($l-header-nav-background-color, 1), rgba($l-header-nav-background-color, 0));
   height: $vertical-spacing-base;
-  margin-bottom: -$vertical-spacing-base;
-  opacity: 1;
+//   opacity: 1;
   position: -webkit-sticky;
   position: sticky;
   top: $l-header-height;
-  -webkit-transition: opacity $transition-duration $transition-duration;
-  transition: opacity $transition-duration $transition-duration;
+  z-index: 2;
 }
 
-.l-header-menu-checkbox:checked ~ .l-header-nav .l-header-nav__fade {
-  opacity: 0;
-  -webkit-transition: opacity $transition-duration;
-  transition: opacity $transition-duration;
-}
+// .l-header-menu-checkbox:checked ~ .l-header-nav .l-header-nav__fade {
+//   opacity: 0;
+//   -webkit-transition: opacity $transition-duration;
+//   transition: opacity $transition-duration;
+// }
 
 .l-header-menu-backdrop {
   background-color: black;
