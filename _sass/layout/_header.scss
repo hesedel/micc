@@ -131,20 +131,23 @@
   bottom: 100%;
   display: block;
   left: 0;
+  opacity: 0;
   overflow: hidden;
   padding-top: $l-header-nav-height;
   position: fixed;
   right: 0;
   top: $l-header-height;
-  -webkit-transition: bottom $transition-duration;
-  transition: bottom $transition-duration;
-  z-index: 1;
+  -webkit-transition: bottom $transition-duration, opacity $transition-duration $transition-duration, z-index 0s $transition-duration;
+  transition: bottom $transition-duration, opacity $transition-duration $transition-duration, z-index 0s $transition-duration;
+  z-index: -1;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu {
   bottom: -($l-header-height + $l-header-nav-height);
-  -webkit-transition: bottom $transition-duration $transition-duration;
-  transition: bottom $transition-duration $transition-duration;
+  opacity: 1;
+  -webkit-transition: bottom $transition-duration $transition-duration, opacity $transition-duration;
+  transition: bottom $transition-duration $transition-duration, opacity $transition-duration;
+  z-index: 1;
 }
 
 .l-header-menu ul {
