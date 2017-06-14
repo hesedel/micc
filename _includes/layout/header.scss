@@ -30,9 +30,14 @@
   transform: translate(-50%, -50%);
 }
 
+.l-header-nav-proxy {
+  height: $l-header-nav-height;
+}
+
 .l-header-nav {
   background-color: $l-header-nav-background-color;
   height: $l-header-nav-height;
+  margin-top: -$l-header-nav-height;
 }
 
 .l-header-nav ul {
