@@ -25,9 +25,9 @@
   z-index: 2;
 }
 
-// @todo
+// no-sticky
 .l-header-shadow {
-//   position: fixed;
+  position: fixed;
 }
 
 .l-header-nav-proxy {
@@ -54,9 +54,9 @@
   z-index: 2;
 }
 
-// @todo
+// no-sticky
 .l-header-nav {
-//   position: relative; // static
+  position: relative;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
@@ -69,9 +69,9 @@
   transition: background-color $transition-duration, top $transition-duration;
 }
 
-// @todo
+// no-sticky
 .l-header-menu-checkbox:checked ~ .l-header-nav {
-//   position: fixed;
+  position: fixed;
 }
 
 .l-header-nav-fade {
@@ -99,9 +99,9 @@
   z-index: 2;
 }
 
-// @todo
+// no-sticky
 .l-header-nav-fade::before {
-//   position: static;
+  position: static;
 }
 
 .l-header-menu-backdrop {
