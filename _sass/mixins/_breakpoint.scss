@@ -1,9 +1,4 @@
 @mixin breakpoint($breakpoint) {
-  @if phone == $breakpoint {
-    @media (min-width: 320px) {
-      @content;
-    }
-  }
   @if phone-s == $breakpoint {
     @media (min-width: 320px) {
       @content;
