@@ -32,7 +32,6 @@
 
 .l-header-nav {
   left: 0;
-  position: relative;
   position: -webkit-sticky;
   position: sticky;
   right: 0;
@@ -44,7 +43,7 @@
 
 // @todo
 .l-header-nav {
-  position: relative;
+  position: static;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
