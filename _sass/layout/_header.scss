@@ -27,7 +27,7 @@
 
 // no-sticky
 .l-header-shadow {
-//   position: fixed;
+  position: fixed;
 }
 
 .l-header-nav {
@@ -44,7 +44,7 @@
 
 // no-sticky
 .l-header-nav {
-//   position: relative;
+  position: relative;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
@@ -59,7 +59,7 @@
 
 // no-sticky
 .l-header-menu-checkbox:checked ~ .l-header-nav {
-//   position: fixed;
+  position: fixed;
 }
 
 .l-header-nav-proxy {
@@ -103,7 +103,7 @@
 
 // no-sticky
 .l-header-nav-fade::before {
-//   position: static;
+  position: static;
 }
 
 .l-header-menu-backdrop {
