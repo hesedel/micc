@@ -38,15 +38,12 @@
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
   background-color: $body-background-color;
-  top: $l-header-height;
-  -webkit-transition: background-color $transition-duration, top $transition-duration;
-  transition: background-color $transition-duration, top $transition-duration;
-}
-
-.l-header-menu-checkbox:checked ~ .l-header-nav-proxy {
   position: fixed;
   position: -webkit-sticky;
   position: sticky;
+  top: $l-header-height;
+  -webkit-transition: background-color $transition-duration, top $transition-duration;
+  transition: background-color $transition-duration, top $transition-duration;
 }
 
 .l-header-nav-fade {
