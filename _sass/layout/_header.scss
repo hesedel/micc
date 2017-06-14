@@ -139,8 +139,8 @@
   position: fixed;
   right: 0;
   top: $l-header-height;
-  -webkit-transition: bottom $transition-duration, opacity $transition-duration $transition-duration, z-index 0s $transition-duration;
-  transition: bottom $transition-duration, opacity $transition-duration $transition-duration, z-index 0s $transition-duration;
+  -webkit-transition: bottom $transition-duration, opacity $transition-duration, z-index 0s $transition-duration;
+  transition: bottom $transition-duration, opacity $transition-duration, z-index 0s $transition-duration;
   z-index: -1;
 }
 
