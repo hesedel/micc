@@ -23,7 +23,8 @@
 }
 
 .l-header-nav {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   -webkit-transition: background-color $transition-duration $transition-duration, top $transition-duration $transition-duration;
   transition: background-color $transition-duration $transition-duration, top $transition-duration $transition-duration;
@@ -32,8 +33,6 @@
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
   background-color: $body-background-color;
-  position: -webkit-sticky;
-  position: sticky;
   top: $l-header-height;
   -webkit-transition: background-color $transition-duration, top $transition-duration;
   transition: background-color $transition-duration, top $transition-duration;
