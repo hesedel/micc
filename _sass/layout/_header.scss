@@ -22,12 +22,12 @@
   position: sticky;
   right: 0;
   top: $l-header-height;
-  z-index: 1; // 2
+  z-index: 1;
 }
 
 // no-sticky
 .l-header-shadow {
-  position: fixed;
+//   position: fixed;
 }
 
 .l-header-nav {
@@ -44,7 +44,7 @@
 
 // no-sticky
 .l-header-nav {
-  position: relative;
+//   position: relative;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
@@ -59,7 +59,7 @@
 
 // no-sticky
 .l-header-menu-checkbox:checked ~ .l-header-nav {
-  position: fixed;
+//   position: fixed;
 }
 
 .l-header-nav-proxy {
@@ -103,7 +103,7 @@
 
 // no-sticky
 .l-header-nav-fade::before {
-  position: static;
+//   position: static;
 }
 
 .l-header-menu-backdrop {
@@ -121,7 +121,7 @@
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu-backdrop {
-  opacity: .25;
+  opacity: .1;
   -webkit-transition: opacity $transition-duration;
   transition: opacity $transition-duration;
   z-index: 1;
