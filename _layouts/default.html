@@ -18,12 +18,17 @@
 <link rel="preload" as="style" href="{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}" onload="this.rel='stylesheet'">
 <script>
   (function (document) {
-//     var link = document.createElement('link');
-//     link.rel = 'stylesheet';
-//     link.href = '{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}';
-//     setTimeout(function () {
-//       document.head.appendChild(link);
-//     }, 1);
+    var isPreloadSupported = (function () {
+      var relList = document.createElement("link").relList;
+      if (!relList || !relList.supports || !relList.supports('preload')) {
+        return false;
+      }
+      return true;
+    })();
+    
+    if (isPreloadSupported) {
+      return;
+    }
     
     setTimeout(function () {
       var i;
@@ -34,28 +39,6 @@
         }
       }
     }, 1);
-    
-    /*
-    var DOMTokenListSupports = function(tokenList, token) {
-if (!tokenList || !tokenList.supports) {
-return;
-  }
-try {
-return tokenList.supports(token);
-  } catch (e) {
-if (e instanceof TypeError) {
-console.log("The DOMTokenList doesn't have a supported tokens list");
-    } else {
-console.error("That shouldn't have happened");
-    }
-  }
-};
-var linkSupportsPreload = DOMTokenListSupports(document.createElement("link").relList, "preload");
-if (!linkSupportsPreload) {
-// Dynamically load the things that relied on preload.
-}
-*/
-
   })(document);
 </script>
 </head>
