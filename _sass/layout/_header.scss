@@ -107,7 +107,8 @@
 
 .l-header-menu ul {
   list-style-type: none;
-  margin-top: $l-header-nav-height;
+  margin-bottom: 0;
+  margin-top: 0;
   opacity: 0;
   -webkit-transition: opacity ($transition-duration * .5);
   transition: opacity ($transition-duration * .5);
