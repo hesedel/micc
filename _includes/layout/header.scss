@@ -12,10 +12,11 @@
 .l-header {
   background-color: $l-header-background-color;
   height: $l-header-height;
-  margin-top: -$l-header-height;
+  left: 0;
   position: fixed;
   position: -webkit-sticky;
   position: sticky;
+  right: 0;
   top: 0;
   z-index: 3;
 }
@@ -37,7 +38,6 @@
 .l-header-nav {
   background-color: $l-header-nav-background-color;
   height: $l-header-nav-height;
-  margin-top: -$l-header-nav-height;
 }
 
 .l-header-nav ul {
