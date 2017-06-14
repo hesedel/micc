@@ -114,6 +114,7 @@
 }
 
 .l-header-menu {
+  background-color: rgba($body-background-color, 1);
   background-image: -webkit-linear-gradient(bottom, rgba($body-background-color, 0), rgba($body-background-color, 1) ($l-header-height + $l-header-nav-height));
   background-image: linear-gradient(to top, rgba($body-background-color, 0), rgba($body-background-color, 1) ($l-header-height + $l-header-nav-height));
   bottom: 100%;
@@ -130,6 +131,7 @@
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu {
+  background-color: rgba($body-background-color, 0);
   bottom: -($l-header-height + $l-header-nav-height);
   -webkit-transition: bottom $transition-duration $transition-duration;
   transition: bottom $transition-duration $transition-duration;
