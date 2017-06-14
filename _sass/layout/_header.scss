@@ -30,18 +30,6 @@
   position: fixed;
 }
 
-.l-header-nav-proxy {
-  background-color: $l-header-nav-background-color;
-  -webkit-transition: background-color $transition-duration $transition-duration;
-  transition: background-color $transition-duration $transition-duration;
-}
-
-.l-header-menu-checkbox:checked ~ .l-header-nav-proxy {
-  background-color: $body-background-color;
-  -webkit-transition: background-color $transition-duration;
-  transition: background-color $transition-duration;
-}
-
 .l-header-nav {
   left: 0;
   position: relative;
@@ -72,6 +60,20 @@
 // no-sticky
 .l-header-menu-checkbox:checked ~ .l-header-nav {
   position: fixed;
+}
+
+.l-header-nav-proxy {
+  background-color: $l-header-nav-background-color;
+  position: relative;
+  -webkit-transition: background-color $transition-duration $transition-duration;
+  transition: background-color $transition-duration $transition-duration;
+  z-index: 1;
+}
+
+.l-header-menu-checkbox:checked ~ .l-header-nav-proxy {
+  background-color: $body-background-color;
+  -webkit-transition: background-color $transition-duration;
+  transition: background-color $transition-duration;
 }
 
 .l-header-nav-fade {
