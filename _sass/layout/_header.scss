@@ -125,8 +125,8 @@
   position: fixed;
   right: 0;
   top: $l-header-height;
-  -webkit-transition: background-color 0s $transition-duration, bottom $transition-duration;
-  transition: background-color 0s $transition-duration, bottom $transition-duration;
+  -webkit-transition: background-color ($transition-duration * .25) ($transition-duration * .75), bottom $transition-duration;
+  transition: background-color ($transition-duration * .25) ($transition-duration * .75), bottom $transition-duration;
   z-index: 1;
 }
 
