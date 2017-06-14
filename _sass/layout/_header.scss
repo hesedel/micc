@@ -40,14 +40,15 @@
 
 .l-header-nav-fade {
   height: $l-header-nav-height;
-  margin-bottom: -$l-header-nav-height;
+  margin-top: -$l-header-nav-height;
 //   -webkit-transition: opacity $transition-duration $transition-duration;
 //   transition: opacity $transition-duration $transition-duration;
 }
 
 .l-header-nav-fade::before {
-  content: '';
   background-image: linear-gradient(rgba($l-header-nav-background-color, 1), rgba($l-header-nav-background-color, 0));
+  content: '';
+  display: block;
   height: $vertical-spacing-base;
 //   opacity: 1;
   position: -webkit-sticky;
