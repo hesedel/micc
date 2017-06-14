@@ -15,9 +15,12 @@
   background-image: -webkit-linear-gradient(rgba(black, .1), rgba(black, 0));
   background-image: linear-gradient(rgba(black, .1), rgba(black, 0));
   height: 2px;
+  left: 0;
   margin-bottom: -2px;
+  position: fixed;
   position: -webkit-sticky;
   position: sticky;
+  right: 0;
   top: $l-header-height;
   z-index: 2;
 }
