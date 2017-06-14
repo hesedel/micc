@@ -26,8 +26,10 @@
 }
 
 .l-header-nav {
+  left: 0;
   position: -webkit-sticky;
   position: sticky;
+  right: 0;
   top: 0;
   -webkit-transition: background-color $transition-duration $transition-duration, top $transition-duration $transition-duration;
   transition: background-color $transition-duration $transition-duration, top $transition-duration $transition-duration;
@@ -39,6 +41,12 @@
   top: $l-header-height;
   -webkit-transition: background-color $transition-duration, top $transition-duration;
   transition: background-color $transition-duration, top $transition-duration;
+}
+
+.l-header-menu-checkbox:checked ~ .l-header-nav-proxy {
+  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .l-header-nav-fade {
