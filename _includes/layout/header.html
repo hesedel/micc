@@ -1,6 +1,7 @@
 {% assign pageurl = site.baseurl | append: page.url %}{% comment %}
 {% endcomment %}{% assign homeurl = site.baseurl | append: '/' %}{% comment %}
 {% endcomment %}{% assign abouturl = site.baseurl | append: '/about.html' %}{% comment %}
+{% endcomment %}{% assign contacturl = site.baseurl | append: '/contact.html' %}{% comment %}
 
 {% endcomment %}<input class="l-header-menu-checkbox" id="l-header-menu-checkbox" type="checkbox">
 
@@ -23,6 +24,9 @@
     <li{% if abouturl == pageurl %} class="is-active"{% endif %}>
       <a href="{{ abouturl }}">About</a>
     </li>
+    <li{% if contacturl == pageurl %} class="is-active"{% endif %}>
+      <a href="{{ contacturl }}">Contact</a>
+    </li>
   </ul>
 </nav>
 
@@ -39,6 +43,9 @@
     </li>
     <li{% if abouturl == pageurl %} class="is-active"{% endif %}>
       <a href="{{ abouturl }}">About</a>
+    </li>
+    <li{% if contacturl == pageurl %} class="is-active"{% endif %}>
+      <a href="{{ contacturl }}">Contact</a>
     </li>
   </ul>
 </nav>
