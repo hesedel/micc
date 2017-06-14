@@ -18,13 +18,22 @@
 <link rel="preload" as="style" href="{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}" onload="this.rel='stylesheet'">
 <script>
   (function (document) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = '{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}';
-    setTimeout(function () {
-      document.head.appendChild(link);
-    }, 1);
+//     var link = document.createElement('link');
+//     link.rel = 'stylesheet';
+//     link.href = '{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}';
+//     setTimeout(function () {
+//       document.head.appendChild(link);
+//     }, 1);
     
+    setTimeout(function () {
+      var i;
+      var links = document.getElementsByTagName('link');
+      for (i = 0; i < links.length; i += 1) {
+        if ('preload' === links[i].rel) {
+          links[i].rel = 'stylesheet';
+        }
+      }
+    }, 1);
     
     /*
     var DOMTokenListSupports = function(tokenList, token) {
