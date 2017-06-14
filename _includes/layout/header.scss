@@ -18,6 +18,11 @@
   z-index: 3;
 }
 
+// @todo
+.l-header {
+  position: fixed;
+}
+
 .l-header-proxy {
   height: $l-header-height;
 }
