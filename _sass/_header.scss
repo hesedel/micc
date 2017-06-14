@@ -46,6 +46,8 @@
   position: -webkit-sticky;
   position: sticky;
   top: $l-header-height;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-transition: opacity $transition-duration $transition-duration;
   transition: opacity $transition-duration $transition-duration;
 }
