@@ -40,7 +40,7 @@
 
 .l-header-nav-fade {
   height: $l-header-nav-height;
-  margin-bottom: $l-header-nav-height;
+  margin-bottom: -$l-header-nav-height;
 //   -webkit-transition: opacity $transition-duration $transition-duration;
 //   transition: opacity $transition-duration $transition-duration;
 }
