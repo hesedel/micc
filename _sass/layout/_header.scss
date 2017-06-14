@@ -43,7 +43,7 @@
 
 // @todo
 .l-header-nav {
-  position: static;
+  position: relative; // static
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
