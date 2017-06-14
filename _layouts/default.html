@@ -18,17 +18,17 @@
 <link rel="preload" as="style" href="{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}" onload="this.rel='stylesheet'">
 <script>
   (function (document) {
-    var isPreloadSupported = (function () {
-      var relList = document.createElement("link").relList;
-      if (!relList || !relList.supports || !relList.supports('preload')) {
-        return false;
-      }
-      return true;
-    })();
+//     var isPreloadSupported = (function () {
+//       var relList = document.createElement("link").relList;
+//       if (!relList || !relList.supports || !relList.supports('preload')) {
+//         return false;
+//       }
+//       return true;
+//     })();
     
-    if (isPreloadSupported) {
-      return;
-    }
+//     if (isPreloadSupported) {
+//       return;
+//     }
     
     setTimeout(function () {
       var i;
