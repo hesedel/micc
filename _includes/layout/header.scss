@@ -5,10 +5,15 @@
   display: none;
 }
 
+.l-header-proxy {
+  height: $l-header-height;
+}
+
 .l-header {
   background-color: $l-header-background-color;
   height: $l-header-height;
-  position: relative;
+  margin-top: -$l-header-height;
+  position: fixed;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
