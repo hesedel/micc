@@ -8,11 +8,16 @@
 .l-header {
   background-color: $l-header-background-color;
   height: $l-header-height;
-  position: relative;
+  margin-bottom: -$l-header-height;
+  position: fixed;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 3;
+}
+
+.l-header-proxy {
+  height: $l-header-height;
 }
 
 .l-header__logo {
