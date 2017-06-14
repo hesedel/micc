@@ -1,0 +1,40 @@
+{% assign pageurl = site.baseurl | append: page.url %}{% comment %}
+{% endcomment %}{% assign homeurl = site.baseurl | append: '/' %}{% comment %}
+{% endcomment %}{% assign abouturl = site.baseurl | append: '/about.html' %}{% comment %}
+
+{% endcomment %}<input class="l-header-menu-checkbox" id="l-header-menu-checkbox" type="checkbox">
+
+<header class="l-header">
+  <label for="l-header-menu-checkbox">Menu</label>
+  <{% if homeurl == pageurl %}h1{% else %}div{% endif %} class="l-header__logo">
+    Header
+  </{% if homeurl == pageurl %}h1{% else %}div{% endif %}>
+</header>
+
+<div class="l-header-shadow"></div>
+
+<nav class="l-header-nav">
+  <div class="l-header-nav__fade"></div>
+  
+  <ul>
+    <li{% if homeurl == pageurl %} class="is-active"{% endif %}>
+      <a href="{{ homeurl }}">Home</a>
+    </li>
+    <li{% if abouturl == pageurl %} class="is-active"{% endif %}>
+      <a href="{{ abouturl }}">About</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="l-header-menu-backdrop"></div>
+
+<nav class="l-header-menu">
+  <ul>
+    <li{% if homeurl == pageurl %} class="is-active"{% endif %}>
+      <a href="{{ homeurl }}">Home</a>
+    </li>
+    <li{% if abouturl == pageurl %} class="is-active"{% endif %}>
+      <a href="{{ abouturl }}">About</a>
+    </li>
+  </ul>
+</nav>
