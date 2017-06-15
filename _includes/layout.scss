@@ -59,6 +59,10 @@ ul {
     margin-right: -$l-aside-width;
     width: 100%;
   }
+
+  @include breakpoint(laptop-l) {
+    width: 80%; // @todo
+  }
 }
 
 .l-content {
