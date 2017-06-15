@@ -24,21 +24,19 @@
   &::before,
   &::after {
     top: 8px;
-    // -webkit-transition: top $transition-duration, transform $transition-duration $transition-duration;
-    // transition: top $transition-duration, transform $transition-duration $transition-duration;
+    -webkit-transition: top $transition-duration, transform $transition-duration $transition-duration;
+    transition: top $transition-duration, transform $transition-duration $transition-duration;
   }
 }
 
 .l-header__menu i::before {
-  // -webkit-transition: top $transition-duration $transition-duration, transform $transition-duration linear $transition-duration;
-  // transition: top $transition-duration $transition-duration, transform $transition-duration linear $transition-duration;
+  -webkit-transition: top $transition-duration $transition-duration, transform $transition-duration linear $transition-duration;
+  transition: top $transition-duration $transition-duration, transform $transition-duration linear $transition-duration;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::before {
   -webkit-transform: rotateZ(45deg) scaleX(1 / sin(45deg));
-  transform: rotateZ(45deg) scaleX(1 / sin(45deg));
-  -webkit-transition: top $transition-duration, transform ($transition-duration * (1 / 3)) linear $transition-duration;
-  transition: top $transition-duration, transform ($transition-duration * (1 / 3)) linear $transition-duration;
+  transform: rotateZ(45deg) scaleX(1 / sin(45deg));n;
 }
 
 .l-header__menu i::after {
@@ -48,8 +46,6 @@
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::after {
   -webkit-transform: rotateZ(135deg) scaleX(1 / sin(135deg));
   transform: rotateZ(135deg) scaleX(1 / sin(135deg));
-  -webkit-transition: top $transition-duration, transform $transition-duration linear $transition-duration;
-  transition: top $transition-duration, transform $transition-duration linear $transition-duration;
 }
 
 .l-header-shadow {
