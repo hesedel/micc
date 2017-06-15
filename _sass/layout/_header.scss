@@ -15,8 +15,8 @@
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i {
   &::before,
   &::after {
-    -webkit-transform: translateY(0) scaleX(sin(90deg));
-    transform: translateY(0) scaleX(sin(90deg));
+    -webkit-transform: translateY(0) scaleX(1 / sin(45deg));
+    transform: translateY(0) scaleX(1 / sin(45deg));
   }
 }
 
