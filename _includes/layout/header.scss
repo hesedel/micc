@@ -158,7 +158,8 @@
   }
 
   @include breakpoint(laptop-l) {
-    width: auto;
+    float: left;
+    margin-right: 0;
   }
 }
 
