@@ -147,21 +147,21 @@
   display: none;
   text-align: center;
 
-  @include breakpoint(tablet) {
-    clear: left;
-    display: block;
-    float: left;
-  }
-
-  @include breakpoint(laptop) {
-    float: none;
-    margin-right: $l-aside-width;
-  }
-
-  @include breakpoint(laptop-l) {
-    float: left;
-    margin-right: 0;
-  }
+  // @include breakpoint(tablet) {
+  //   clear: left;
+  //   display: block;
+  //   float: left;
+  // }
+  //
+  // @include breakpoint(laptop) {
+  //   float: none;
+  //   margin-right: $l-aside-width;
+  // }
+  //
+  // @include breakpoint(laptop-l) {
+  //   float: left;
+  //   margin-right: 0;
+  // }
 }
 
 .l-header-menu ul {
