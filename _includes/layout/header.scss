@@ -160,10 +160,11 @@
     width: auto;
   }
 
-  // @include breakpoint(laptop-l) {
-  //   float: left;
-  //   margin-right: 0;
-  // }
+  @include breakpoint(laptop-l) {
+    float: left;
+    margin-right: 0;
+    width: 20%; // @todo
+  }
 }
 
 .l-header-menu ul {

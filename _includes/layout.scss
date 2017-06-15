@@ -61,14 +61,8 @@ ul {
   }
 }
 
-// .l-content {
-//   @include breakpoint(laptop) {
-//     margin-right: $l-aside-width;
-//   }
-// }
-
-// .l-content__inner {
-//   @include breakpoint(laptop) {
-//     margin-right: $l-aside-width;
-//   }
-// }
+.l-content {
+  @include breakpoint(laptop) {
+    margin-right: $l-aside-width;
+  }
+}
