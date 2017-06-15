@@ -130,4 +130,8 @@
 
 .l-header-menu {
   display: none;
+
+  @include breakpoint(tablet) {
+    display: block;
+  }
 }

@@ -166,6 +166,10 @@
   -webkit-transition: opacity $transition-duration;
   transition: opacity $transition-duration;
   z-index: 1;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 
 .l-header-menu {
@@ -183,6 +187,11 @@
   -webkit-transition: bottom $transition-duration, opacity $transition-duration, z-index 0s $transition-duration;
   transition: bottom $transition-duration, opacity $transition-duration, z-index 0s $transition-duration;
   z-index: -1;
+
+  @include breakpoint(tablet) {
+    opacity: 1;
+    z-index: 0;
+  }
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu {
