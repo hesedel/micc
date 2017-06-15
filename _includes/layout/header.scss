@@ -38,7 +38,10 @@
 }
 
 .l-header__menu {
-  
+  float: left;
+  height: 100%;
+  padding-left: $horizontal-spacing-base;
+  padding-right: $horizontal-spacing-base;
 }
 
 .l-header__menu i {
