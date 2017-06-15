@@ -22,7 +22,7 @@ ul {
 }
 
 .l-body {
-  background-color: $l-body-background-color;
+  // background-color: $l-body-background-color;
 
   @include breakpoint(tablet) {
     margin-top: $l-header-height;
