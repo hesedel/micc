@@ -52,17 +52,15 @@ ul {
   }
 }
 
-.l-content-outer {
-  @include breakpoint(tablet) {
-    padding-top: $l-header-height;
-  }
+.l-content-wrapper {
+  // @include breakpoint(tablet) {
+  //   padding-top: $l-header-height;
+  // }
+  //
+  // @include breakpoint(laptop) {
+  //   padding-top: 0;
+  // }
 
-  @include breakpoint(laptop) {
-    padding-top: 0;
-  }
-}
-
-.l-content {
   @include breakpoint(laptop) {
     float: left;
     margin-right: -$l-aside-width;
@@ -70,8 +68,14 @@ ul {
   }
 }
 
-.l-content__inner {
+.l-content {
   @include breakpoint(laptop) {
     margin-right: $l-aside-width;
   }
 }
+
+// .l-content__inner {
+//   @include breakpoint(laptop) {
+//     margin-right: $l-aside-width;
+//   }
+// }
