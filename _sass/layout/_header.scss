@@ -15,19 +15,19 @@
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i {
   &::before,
   &::after {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateY(0) scaleX(sin(90deg));
+    transform: translateY(0) scaleX(sin(90deg);
   }
 }
 
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::before {
-  -webkit-transform: rotateZ(45deg) scaleX(tan(45deg));
-  transform: rotateZ(45deg) scaleX(tan(45deg));
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
 }
 
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::after {
-  -webkit-transform: rotateZ(135deg) scaleX(tan(135deg));
-  transform: rotateZ(135deg) scaleX(tan(135deg));
+  -webkit-transform: rotateZ(135deg);
+  transform: rotateZ(135deg);
 }
 
 .l-header-shadow {
