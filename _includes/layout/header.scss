@@ -40,14 +40,17 @@
 .l-header__menu {
   float: left;
   height: 100%;
-  padding-left: $horizontal-spacing-base;
-  padding-right: $horizontal-spacing-base;
+  padding-left: $horizontal-spacing-base * 2;
+  padding-right: $horizontal-spacing-base * 2;
 }
 
 .l-header__menu i {
   display: block;
   height: 17px;
   position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 17px;
 }
 
@@ -62,11 +65,11 @@
 }
 
 .l-header__menu i::before {
-  top: 0;
+  top: 1px;
 }
 
 .l-header__menu i::after {
-  bottom: 0;
+  top: 15px;
 }
 
 .l-header-nav {
