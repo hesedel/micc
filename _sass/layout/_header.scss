@@ -105,12 +105,20 @@
   -webkit-transition: background-color $transition-duration $transition-duration;
   transition: background-color $transition-duration $transition-duration;
   z-index: 1;
+
+  @include breakpoint(tablet) {
+    background-color: transparent;
+  }
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav-proxy {
   background-color: $body-background-color;
   -webkit-transition: background-color $transition-duration;
   transition: background-color $transition-duration;
+
+  @include breakpoint(tablet) {
+    background-color: transparent;
+  }
 }
 
 .l-header-nav-fade {

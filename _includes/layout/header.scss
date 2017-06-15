@@ -98,6 +98,7 @@
   margin-bottom: -$l-header-nav-height;
 
   @include breakpoint(tablet) {
+    background-color: transparent;
     float: left;
     margin-bottom: 0;
   }
