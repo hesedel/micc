@@ -21,7 +21,6 @@
     float: left;
     margin-bottom: 0;
     position: relative;
-    top: -$l-header-height;
   }
 }
 
@@ -103,7 +102,6 @@
     float: left;
     height: $l-header-height;
     margin-bottom: 0;
-    margin-top: -$l-header-height;
   }
 }
 
@@ -152,7 +150,6 @@
     clear: left;
     display: block;
     float: left;
-    margin-top: -$l-header-height;
   }
 
   @include breakpoint(laptop) {

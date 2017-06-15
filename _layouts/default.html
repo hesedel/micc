@@ -45,11 +45,17 @@
 
 <body>
 <div class="l-body">
+<div class="l-body__bg"></div>
+
 {% include layout/header.html %}
+<div class="l-content-outer">
 <main class="l-content">
+<div class="l-content__inner">
 
 {{ content }}
+</div>
 </main>
+</div>
 
 {% include layout/aside.html %}{% comment %}
 {% endcomment %}</div>

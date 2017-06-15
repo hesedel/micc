@@ -23,14 +23,6 @@ ul {
 
 .l-body {
   background-color: $l-body-background-color;
-
-  @include breakpoint(tablet) {
-    margin-top: $l-header-height;
-  }
-
-  @include breakpoint(laptop) {
-    margin-right: 400px; // @todo
-  }
 }
 
 .l-body::after {
@@ -42,13 +34,13 @@ ul {
 }
 
 .l-content {
-  @include breakpoint(laptop) {
-    float: left;
-    margin-right: -400px; // @todo
-    width: 100%;
-  }
-
-  @include breakpoint(laptop-l) {
-    clear: none;
-  }
+  // @include breakpoint(laptop) {
+  //   float: left;
+  //   margin-right: -400px; // @todo
+  //   width: 100%;
+  // }
+  //
+  // @include breakpoint(laptop-l) {
+  //   clear: none;
+  // }
 }
