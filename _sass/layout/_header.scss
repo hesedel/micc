@@ -21,13 +21,13 @@
 }
 
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::before {
-  -webkit-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg) scaleX(cos(45deg));
+  transform: rotateZ(45deg) scaleX(cos(45deg));
 }
 
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::after {
-  -webkit-transform: rotateZ(135deg);
-  transform: rotateZ(135deg);
+  -webkit-transform: rotateZ(135deg) scaleX(cos(135deg));
+  transform: rotateZ(135deg) scaleX(cos(135deg));
 }
 
 .l-header-shadow {
