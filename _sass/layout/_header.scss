@@ -31,7 +31,7 @@
 
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::before {
   -webkit-transform: rotateZ(45deg) scaleX(1 / sin(45deg));
-  transform: rotateZ(45deg) scaleX(1 / sin(45deg));n;
+  transform: rotateZ(45deg) scaleX(1 / sin(45deg));
 }
 
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::after {
