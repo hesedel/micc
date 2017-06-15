@@ -27,7 +27,7 @@ ul {
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
+  top: $l-header-height;
 
   @include breakpoint(laptop) {
     -webkit-border-bottom-right-radius: $border-radius;
