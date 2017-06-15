@@ -207,6 +207,10 @@
   opacity: 0;
   -webkit-transition: opacity ($transition-duration * .5);
   transition: opacity ($transition-duration * .5);
+
+  @include breakpoint(tablet) {
+    opacity: 1;
+  }
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu ul {
