@@ -34,19 +34,25 @@ ul {
 }
 
 .l-content-outer {
-  @include breakpoint(laptop) {
+  @include breakpoint(tablet) {
     padding-top: $l-header-height;
   }
 }
 
 .l-content {
-  // @include breakpoint(laptop) {
-  //   float: left;
-  //   margin-right: -400px; // @todo
-  //   width: 100%;
-  // }
-  //
+  @include breakpoint(laptop) {
+    float: left;
+    margin-right: -400px; // @todo
+    width: 100%;
+  }
+
   // @include breakpoint(laptop-l) {
   //   clear: none;
   // }
+}
+
+.l-content__inner {
+  @include breakpoint(laptop) {
+    margin-right: 400px; // @todo
+  }
 }
