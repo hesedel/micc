@@ -190,6 +190,7 @@
 
   @include breakpoint(tablet) {
     opacity: 1;
+    position: relative;
     z-index: 0;
   }
 }
