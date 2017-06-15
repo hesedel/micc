@@ -21,8 +21,21 @@ ul {
   padding-left: 0;
 }
 
-.l-body {
+.l-body__bg {
   background-color: $l-body-background-color;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @include breakpoint(laptop) {
+    -webkit-border-bottom-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    -webkit-border-top-right-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    right: 400px; // @todo
+  }
 }
 
 .l-body::after {
