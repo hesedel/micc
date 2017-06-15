@@ -24,6 +24,6 @@ ul {
   background-color: $l-body-background-color;
 
   @include breakpoint(laptop) {
-    margin-right: 200px; // @todo
+    margin-right: 400px; // @todo
   }
 }
