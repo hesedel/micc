@@ -15,8 +15,8 @@
 .l-header__menu i {
   &::before,
   &::after {
-    // -webkit-transition: top $transition-duration $transition-duration, transform $transition-duration;
-    // transition: top $transition-duration $transition-duration, transform $transition-duration;
+    -webkit-transition: top $transition-duration $transition-duration, transform $transition-duration;
+    transition: top $transition-duration $transition-duration, transform $transition-duration;
   }
 }
 
@@ -29,18 +29,9 @@
   }
 }
 
-.l-header__menu i::before {
-  -webkit-transition: top $transition-duration $transition-duration, transform $transition-duration linear $transition-duration;
-  transition: top $transition-duration $transition-duration, transform $transition-duration linear $transition-duration;
-}
-
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::before {
   -webkit-transform: rotateZ(45deg) scaleX(1 / sin(45deg));
   transform: rotateZ(45deg) scaleX(1 / sin(45deg));n;
-}
-
-.l-header__menu i::after {
-
 }
 
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::after {
