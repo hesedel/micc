@@ -42,7 +42,9 @@
 }
 
 .l-header__menu i {
+  display: block;
   height: 17px;
+  position: relative;
   width: 17px;
 }
 
@@ -51,7 +53,9 @@
   background-color: red;
   content: '';
   height: 1px;
+  left: 0;
   position: absolute;
+  right: 0;
 }
 
 .l-header__menu i::before {
