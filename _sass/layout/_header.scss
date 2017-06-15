@@ -12,10 +12,20 @@
   transition: background-color $transition-duration;
 }
 
+.l-header__menu i {
+  &::before,
+  &::after {
+    -webkit-transition: top $transition-duration $transition-duration, transform $transition-duration;
+    transition: top $transition-duration $transition-duration, transform $transition-duration;
+  }
+}
+
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i {
   &::before,
   &::after {
     top: 8px;
+    -webkit-transition: top $transition-duration, transform $transition-duration $transition-duration;
+    transition: top $transition-duration, transform $transition-duration $transition-duration;
   }
 }
 
