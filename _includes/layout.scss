@@ -35,7 +35,9 @@ ul {
 
 .l-content {
   @include breakpoint(laptop) {
-    clear: left;
+    float: left;
+    margin-right: -400px; // @todo
+    width: 100%;
   }
 
   @include breakpoint(laptop-l) {
