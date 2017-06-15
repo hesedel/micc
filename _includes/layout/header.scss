@@ -165,6 +165,8 @@
 }
 
 .l-header-menu ul {
+  text-align: left;
+
   @include breakpoint(laptop) {
     display: inline-block;
     overflow: hidden;
