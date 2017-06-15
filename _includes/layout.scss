@@ -23,7 +23,7 @@ ul {
 .l-body {
   background-color: $l-body-background-color;
 
-  @include breakpoint(tablet) {
+  @include breakpoint(laptop) {
     margin-right: 200px; // @todo
   }
 }
