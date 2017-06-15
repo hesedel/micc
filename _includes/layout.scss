@@ -55,6 +55,10 @@ ul {
   @include breakpoint(tablet) {
     padding-top: $l-header-height;
   }
+
+  @include breakpoint(laptop) {
+    padding-top: 0;
+  }
 }
 
 .l-content {
