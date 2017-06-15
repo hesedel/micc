@@ -33,6 +33,14 @@ ul {
   }
 }
 
+.l-body::after {
+  @include breakpoint(tablet) {
+    clear: left;
+    content: '';
+    display: block;
+  }
+}
+
 .l-content {
   @include breakpoint(laptop) {
     float: left;

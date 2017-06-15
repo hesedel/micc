@@ -12,14 +12,6 @@
   }
 }
 
-.l-body::after {
-  @include breakpoint(tablet) {
-    clear: left;
-    content: '';
-    display: block;
-  }
-}
-
 .l-content {
   min-height: $vertical-spacing-base * 100;
 }
