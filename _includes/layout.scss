@@ -24,6 +24,11 @@ ul {
 
 .l-body {
   position: relative;
+
+  @include breakpoint(tablet) {
+    float: left;
+    width: 100%;
+  }
 }
 
 .l-body__bg {
@@ -41,14 +46,6 @@ ul {
     -webkit-border-top-right-radius: $border-radius;
     border-top-right-radius: $border-radius;
     right: $l-aside-width;
-  }
-}
-
-.l-body::after {
-  @include breakpoint(tablet) {
-    clear: left;
-    content: '';
-    display: block;
   }
 }
 
