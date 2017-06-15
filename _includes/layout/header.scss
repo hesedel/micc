@@ -62,19 +62,16 @@
     height: 1px;
     left: 0;
     position: absolute;
-    top: 8px;
     right: 0;
   }
 }
 
 .l-header__menu i::before {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
+  top: 2px;
 }
 
 .l-header__menu i::after {
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
+  top: 14px;
 }
 
 .l-header-nav {

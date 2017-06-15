@@ -15,8 +15,7 @@
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i {
   &::before,
   &::after {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    top: 8px;
   }
 }
 
