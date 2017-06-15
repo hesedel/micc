@@ -11,6 +11,10 @@
   background-color: $body-background-color;
   -webkit-transition: background-color $transition-duration;
   transition: background-color $transition-duration;
+
+  @include breakpoint(tablet) {
+    background-color: $l-header-background-color;
+  }
 }
 
 .l-header__menu i {
@@ -92,6 +96,11 @@
   top: $l-header-height;
   -webkit-transition: background-color $transition-duration, top $transition-duration;
   transition: background-color $transition-duration, top $transition-duration;
+
+  @include breakpoint(tablet) {
+    background-color: transparent;
+    top: 0;
+  }
 }
 
 // no-sticky
