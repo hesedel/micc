@@ -54,25 +54,26 @@ ul {
 
 .l-content-wrapper {
   @include breakpoint(tablet) {
-    padding-top: $l-header-height;
+    float: left;
+    width: 80%; // @todo
   }
 
   // @include breakpoint(laptop) {
   //   padding-top: 0;
   // }
 
-  @include breakpoint(laptop) {
-    float: left;
-    margin-right: -$l-aside-width;
-    width: 100%;
-  }
+  // @include breakpoint(laptop) {
+  //   float: left;
+  //   margin-right: -$l-aside-width;
+  //   width: 100%;
+  // }
 }
 
-.l-content {
-  @include breakpoint(laptop) {
-    margin-right: $l-aside-width;
-  }
-}
+// .l-content {
+//   @include breakpoint(laptop) {
+//     margin-right: $l-aside-width;
+//   }
+// }
 
 // .l-content__inner {
 //   @include breakpoint(laptop) {
