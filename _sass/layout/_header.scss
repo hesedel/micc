@@ -117,7 +117,7 @@
   z-index: 1;
 
   @include breakpoint(tablet) {
-    background-color: $body-background-color;
+    background-color: transparent;
   }
 }
 
@@ -127,7 +127,7 @@
   transition: background-color $transition-duration;
 
   @include breakpoint(tablet) {
-    background-color: $body-background-color;
+    background-color: transparent;
   }
 }
 

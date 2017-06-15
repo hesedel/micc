@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'layout/vars';
+@import 'layout/vars.header';
 @import 'mixins';
 
 html {
@@ -22,6 +23,10 @@ ul {
 
 .l-body {
   background-color: $l-body-background-color;
+
+  @include breakpoint(tablet) {
+    margin-top: $l-header-height;
+  }
 
   @include breakpoint(laptop) {
     margin-right: 400px; // @todo
