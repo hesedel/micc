@@ -159,6 +159,10 @@
   -webkit-transition: opacity $transition-duration $transition-duration, z-index 0s ($transition-duration * 2);
   transition: opacity $transition-duration $transition-duration, z-index 0s ($transition-duration * 2);
   z-index: -1;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-menu-backdrop {
@@ -166,10 +170,6 @@
   -webkit-transition: opacity $transition-duration;
   transition: opacity $transition-duration;
   z-index: 1;
-
-  @include breakpoint(tablet) {
-    display: none;
-  }
 }
 
 .l-header-menu {
@@ -192,6 +192,7 @@
     opacity: 1;
     padding-top: 0;
     position: relative;
+    top: 0;
     z-index: 0;
   }
 }
