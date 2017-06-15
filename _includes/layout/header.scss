@@ -147,12 +147,12 @@
   display: none;
   text-align: center;
 
-  // @include breakpoint(tablet) {
-  //   clear: left;
-  //   display: block;
-  //   float: left;
-  // }
-  //
+  @include breakpoint(tablet) {
+    clear: left;
+    display: block;
+    float: left;
+  }
+
   // @include breakpoint(laptop) {
   //   float: none;
   //   margin-right: $l-aside-width;
