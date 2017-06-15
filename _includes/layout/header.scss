@@ -31,6 +31,10 @@
 
 .l-header-proxy {
   height: $l-header-height;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 
 .l-header__logo {
@@ -52,10 +56,6 @@
   height: 100%;
   padding-left: $horizontal-spacing-base * 2;
   padding-right: $horizontal-spacing-base * 2;
-
-  @include breakpoint(tablet) {
-    display: none;
-  }
 }
 
 .l-header__menu i {
@@ -122,10 +122,6 @@
 
 .l-header-nav-proxy {
   height: $l-header-nav-height;
-
-  @include breakpoint(tablet) {
-    display: none;
-  }
 }
 
 .l-header-menu-backdrop {
