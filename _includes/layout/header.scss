@@ -134,7 +134,7 @@
   height: $l-header-nav-height;
 
   @include breakpoint(tablet) {
-    height: $l-header-height;
+    display: none;
   }
 }
 
