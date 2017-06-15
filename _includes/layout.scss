@@ -32,3 +32,13 @@ ul {
     margin-right: 400px; // @todo
   }
 }
+
+.l-content {
+  @include breakpoint(laptop) {
+    clear: left;
+  }
+
+  @include breakpoint(laptop-l) {
+    clear: none;
+  }
+}

@@ -153,4 +153,12 @@
     float: left;
     margin-top: -$l-header-height;
   }
+
+  @include breakpoint(laptop) {
+    width: 100%;
+  }
+
+  @include breakpoint(laptop-l) {
+    width: auto;
+  }
 }
