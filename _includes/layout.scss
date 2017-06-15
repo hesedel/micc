@@ -53,10 +53,10 @@ ul {
 }
 
 .l-content-wrapper {
-  // @include breakpoint(tablet) {
-  //   padding-top: $l-header-height;
-  // }
-  //
+  @include breakpoint(tablet) {
+    padding-top: $l-header-height;
+  }
+
   // @include breakpoint(laptop) {
   //   padding-top: 0;
   // }
