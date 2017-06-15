@@ -146,6 +146,7 @@
 
 .l-header-menu {
   display: none;
+  text-align: center;
 
   @include breakpoint(tablet) {
     clear: left;
@@ -160,5 +161,26 @@
 
   @include breakpoint(laptop-l) {
     width: auto;
+  }
+}
+
+.l-header-menu ul {
+  @include breakpoint(laptop) {
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  @include breakpoint(laptop-l) {
+    display: block;
+  }
+}
+
+.l-header-menu li {
+  @include breakpoint(laptop) {
+    float: left;
+  }
+
+  @include breakpoint(laptop-l) {
+    float: none;
   }
 }
