@@ -37,6 +37,31 @@
   transform: translate(-50%, -50%);
 }
 
+.l-header__menu {
+  
+}
+
+.l-header__menu i {
+  height: 17px;
+  width: 17px;
+}
+
+.l-header__menu i::before,
+.l-header__menu i::after {
+  background-color: red;
+  content: '';
+  height: 1px;
+  position: absolute;
+}
+
+.l-header__menu i::before {
+  top: 0;
+}
+
+.l-header__menu i::after {
+  bottom: 0;
+}
+
 .l-header-nav {
   background-color: $l-header-nav-background-color;
   height: $l-header-nav-height;
