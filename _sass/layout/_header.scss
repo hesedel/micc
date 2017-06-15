@@ -73,6 +73,10 @@
   -webkit-transition: background-color $transition-duration $transition-duration, top $transition-duration;
   transition: background-color $transition-duration $transition-duration, top $transition-duration;
   z-index: 2;
+
+  @include breakpoint(tablet) {
+    position: relative;
+  }
 }
 
 // no-sticky
@@ -115,6 +119,10 @@
   opacity: 1;
   -webkit-transition: opacity $transition-duration $transition-duration;
   transition: opacity $transition-duration $transition-duration;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav-fade {
