@@ -136,6 +136,8 @@
   display: none;
 
   @include breakpoint(tablet) {
+    clear: left;
     display: block;
+    float: left;
   }
 }
