@@ -99,6 +99,7 @@
 
   @include breakpoint(tablet) {
     background-color: transparent;
+    position: relative;
     top: 0;
   }
 }
