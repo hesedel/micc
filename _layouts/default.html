@@ -25,11 +25,11 @@
       }
       return true;
     })();
-    
+
     if (isPreloadSupported) {
       return;
     }
-    
+
     setTimeout(function () {
       var i;
       var links = document.getElementsByTagName('link');
@@ -42,7 +42,7 @@
   })(document);
 </script>
 </head>
-  
+
 <body>
 <div class="l-body">
 {% include layout/header.html %}
@@ -51,6 +51,7 @@
 {{ content }}
 </main>
 </div>
+{% include layout/aside.html %}
 
 {% include layout/footer.html %}
 </body>
