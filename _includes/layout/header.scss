@@ -124,10 +124,18 @@
   padding-left: $horizontal-spacing-base;
   padding-right: $horizontal-spacing-base;
   text-decoration: none;
+
+  @include breakpoint(tablet) {
+    line-height: $l-header-height;
+  }
 }
 
 .l-header-nav-proxy {
   height: $l-header-nav-height;
+
+  @include breakpoint(tablet) {
+    height: $l-header-height;
+  }
 }
 
 .l-header-menu-backdrop {
