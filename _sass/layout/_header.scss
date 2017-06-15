@@ -37,8 +37,8 @@
 .l-header-menu-checkbox:checked ~ .l-header .l-header__menu i::before {
   -webkit-transform: rotateZ(45deg) scaleX(1 / sin(45deg));
   transform: rotateZ(45deg) scaleX(1 / sin(45deg));
-  -webkit-transition: top $transition-duration, transform ($transition-duration * .5) linear $transition-duration;
-  transition: top $transition-duration, transform ($transition-duration * .5) linear $transition-duration;
+  -webkit-transition: top $transition-duration, transform ($transition-duration * (1 / 3)) linear $transition-duration;
+  transition: top $transition-duration, transform ($transition-duration * (1 / 3)) linear $transition-duration;
 }
 
 .l-header__menu i::after {
