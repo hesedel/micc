@@ -3,15 +3,6 @@
 
 @import 'layout/header';
 
-// .l-body {
-//   @include breakpoint(laptop) {
-//     -webkit-border-bottom-right-radius: $border-radius;
-//     border-bottom-right-radius: $border-radius;
-//     -webkit-border-top-right-radius: $border-radius;
-//     border-top-right-radius: $border-radius;
-//   }
-// }
-
 .l-content {
   min-height: $vertical-spacing-base * 100;
 }

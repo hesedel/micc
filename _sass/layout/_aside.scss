@@ -1,6 +1,8 @@
+@import 'vars.aside';
+
 .l-aside {
   @include breakpoint(laptop) {
     float: left;
-    width: 400px; // @todo
+    width: $l-aside-width;
   }
 }

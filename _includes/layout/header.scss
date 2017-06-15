@@ -1,4 +1,5 @@
 @import 'layout/vars.header';
+@import 'layout/vars.aside';
 @import 'mixins';
 
 .l-header-menu-checkbox {
@@ -154,7 +155,7 @@
 
   @include breakpoint(laptop) {
     float: none;
-    margin-right: 400px; // @todo
+    margin-right: $l-aside-width;
   }
 
   @include breakpoint(laptop-l) {

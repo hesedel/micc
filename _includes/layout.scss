@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'layout/vars';
 @import 'layout/vars.header';
+@import 'layout/vars.aside';
 @import 'mixins';
 
 html {
@@ -39,7 +40,7 @@ ul {
     border-bottom-right-radius: $border-radius;
     -webkit-border-top-right-radius: $border-radius;
     border-top-right-radius: $border-radius;
-    right: 400px; // @todo
+    right: $l-aside-width;
   }
 }
 
@@ -64,17 +65,13 @@ ul {
 .l-content {
   @include breakpoint(laptop) {
     float: left;
-    margin-right: -400px; // @todo
+    margin-right: -$l-aside-width;
     width: 100%;
   }
-
-  // @include breakpoint(laptop-l) {
-  //   clear: none;
-  // }
 }
 
 .l-content__inner {
   @include breakpoint(laptop) {
-    margin-right: 400px; // @todo
+    margin-right: $l-aside-width;
   }
 }
