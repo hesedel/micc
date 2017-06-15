@@ -19,6 +19,7 @@
 
   @include breakpoint(tablet) {
     float: left;
+    margin-bottom: 0;
     position: relative;
   }
 }
@@ -40,6 +41,10 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
+  @include breakpoint(tablet) {
+    position: relative;
+  }
 }
 
 .l-header__menu {
@@ -47,6 +52,10 @@
   height: 100%;
   padding-left: $horizontal-spacing-base * 2;
   padding-right: $horizontal-spacing-base * 2;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 
 .l-header__menu i {
@@ -83,6 +92,11 @@
   background-color: $l-header-nav-background-color;
   height: $l-header-nav-height;
   margin-bottom: -$l-header-nav-height;
+
+  @include breakpoint(tablet) {
+    float: left;
+    margin-bottom: 0;
+  }
 }
 
 .l-header-nav ul {
@@ -108,6 +122,10 @@
 
 .l-header-nav-proxy {
   height: $l-header-nav-height;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 
 .l-header-menu-backdrop {

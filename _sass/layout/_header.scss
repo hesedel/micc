@@ -51,6 +51,10 @@
   right: 0;
   top: $l-header-height;
   z-index: 1;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 
 // no-sticky
