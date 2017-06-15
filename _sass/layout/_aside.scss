@@ -2,6 +2,7 @@
 
 .l-aside {
   @include breakpoint(laptop) {
+    clear: none;
     float: left;
     width: $l-aside-width;
   }

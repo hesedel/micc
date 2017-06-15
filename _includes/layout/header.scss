@@ -154,11 +154,12 @@
     width: 20%; // @todo
   }
 
-  // @include breakpoint(laptop) {
-  //   float: none;
-  //   margin-right: $l-aside-width;
-  // }
-  //
+  @include breakpoint(laptop) {
+    float: none;
+    margin-right: $l-aside-width;
+    width: auto;
+  }
+
   // @include breakpoint(laptop-l) {
   //   float: left;
   //   margin-right: 0;
