@@ -153,6 +153,10 @@
   @include breakpoint(tablet) {
     line-height: $l-header-height;
   }
+
+  @include breakpoint(laptop) {
+    line-height: $l-header-height-2
+  }
 }
 
 .l-header-nav-proxy {
