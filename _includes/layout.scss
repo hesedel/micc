@@ -28,13 +28,18 @@ ul {
 }
 
 .l-body {
-  max-width: $l-body-max-width;
+  max-width: $l-body-max-width - $l-aside-width;
   position: relative;
 
-  @include breakpoint(tablet) {
-    float: left;
-    width: 100%;
+  @include breakpoint(laptop) {
+    margin-right: $l-aside-width;
   }
+}
+
+.l-body::after {
+  clear: left;
+  content: '';
+  display: block;
 }
 
 .l-body__bg {
@@ -55,7 +60,6 @@ ul {
     border-bottom-right-radius: $border-radius;
     -webkit-border-top-right-radius: $border-radius;
     border-top-right-radius: $border-radius;
-    right: $l-aside-width;
   }
 
   @include breakpoint(4k) {
