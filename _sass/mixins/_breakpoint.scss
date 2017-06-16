@@ -5,27 +5,32 @@
     }
   }
   @elseif phone-m == $breakpoint {
-    @media (min-width: 375px) {
+    @media (min-width: 375px) { // 500
       @content;
     }
   }
   @elseif phone-l == $breakpoint {
-    @media (min-width: 425px) {
+    @media (min-width: 425px) { // 650
       @content;
     }
   }
   @elseif tablet == $breakpoint {
-    @media (min-width: 768px) {
+    @media (min-width: 768px) { // 800
       @content;
     }
   }
   @elseif laptop == $breakpoint {
-    @media (min-width: 1024px) {
+    @media (min-width: 1020px) { // @1024
       @content;
     }
   }
   @elseif laptop-l == $breakpoint {
-    @media (min-width: 1440px) {
+    @media (min-width: 1220px) { // @1440
+      @content;
+    }
+  }
+  @elseif 4k == $breakpoint {
+    @media (min-width: 1450px) { // @2560
       @content;
     }
   }
@@ -35,12 +40,3 @@
     }
   }
 }
-
-/*
-500 - moble still / logo size changed
-650 - mobile still / ad placement changed
-800 - switched to next mode - menu on the left
-1020 - switched to next mode - aside on the right, menu on top
-1220 - switched to next mode - menu back to the left
-1450 - final mode - nav on the left
-*/

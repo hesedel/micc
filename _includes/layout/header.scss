@@ -104,6 +104,12 @@
     height: $l-header-height;
     margin-bottom: 0;
   }
+
+  @include breakpoint(4k) {
+    clear: left;
+    height: auto;
+    width: $l-header-nav-width;
+  }
 }
 
 .l-header-nav ul {
@@ -116,6 +122,10 @@
 .l-header-nav li {
   float: left;
   height: 100%;
+
+  @include breakpoint(4k) {
+    float: none;
+  }
 }
 
 .l-header-nav a {
@@ -164,6 +174,10 @@
     float: left;
     margin-right: 0;
     width: $l-header-menu-width;
+  }
+
+  @include breakpoint(4k) {
+    clear: none;
   }
 }
 

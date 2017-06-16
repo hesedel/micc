@@ -53,12 +53,17 @@ ul {
     border-top-right-radius: $border-radius;
     right: $l-aside-width;
   }
+
+  @include breakpoint(4k) {
+    left: $l-header-nav-width;
+    top: $vertical-spacing-base;
+  }
 }
 
 .l-content-wrapper {
   @include breakpoint(tablet) {
     float: left;
-    width: 80%; // @todo
+    width: 100% - $l-header-menu-width;
   }
 
   @include breakpoint(laptop) {
@@ -67,7 +72,11 @@ ul {
   }
 
   @include breakpoint(laptop-l) {
-    width: 80%; // @todo
+    width: 100% - $l-header-menu-width;
+  }
+
+  @include breakpoint(4k) {
+    width: 100% - ($l-header-nav-width + $l-header-menu-width);
   }
 }
 
