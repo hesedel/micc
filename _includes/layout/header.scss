@@ -22,6 +22,7 @@
     float: left;
     margin-bottom: 0;
     position: relative;
+    min-width: $l-header-menu-width;
   }
 
   @include breakpoint(4k) {
