@@ -10,7 +10,6 @@
   text-align: center;
 
   @include breakpoint(tablet) {
-    clear: left;
     display: block;
     float: left;
     width: $l-menu-width;

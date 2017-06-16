@@ -30,22 +30,15 @@ ul {
 
 .l-body {
   background-color: $l-body-background-color;
-  max-width: $l-body-max-width - $l-aside-width;
+  float: left;
+  max-width: $l-body-max-width;
+  width: 100%;
 
   @include breakpoint(tablet) {
     background-color: transparent;
+    clear: left;
     position: relative;
   }
-
-  @include breakpoint(laptop) {
-    margin-right: $l-aside-width;
-  }
-}
-
-.l-body::after {
-  clear: left;
-  content: '';
-  display: block;
 }
 
 .l-body__bg {
@@ -60,7 +53,6 @@ ul {
 
   @include breakpoint(tablet) {
     display: block;
-    top: $l-header-height-2;
   }
 
   @include breakpoint(laptop) {
