@@ -178,7 +178,6 @@
 
   @include breakpoint(laptop) {
     float: none;
-    margin-right: $l-aside-width;
     width: auto;
   }
 
