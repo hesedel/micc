@@ -30,6 +30,7 @@ ul {
 
 .l-body {
   background-color: $l-body-background-color;
+  clear: left;
   max-width: $l-body-max-width - $l-aside-width;
 
   @include breakpoint(laptop) {
