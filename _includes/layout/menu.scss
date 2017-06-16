@@ -1,0 +1,56 @@
+@import 'layout/vars.menu';
+@import 'mixins';
+
+.l-menu-backdrop {
+  display: none;
+}
+
+.l-menu {
+  display: none;
+  text-align: center;
+
+  @include breakpoint(tablet) {
+    clear: left;
+    display: block;
+    float: left;
+    width: $l-menu-width;
+  }
+
+  @include breakpoint(laptop) {
+    float: none;
+    width: auto;
+  }
+
+  @include breakpoint(laptop-l) {
+    float: left;
+    margin-right: 0;
+    width: $l-menu-width-2;
+  }
+
+  @include breakpoint(4k) {
+    clear: none;
+  }
+}
+
+.l-menu ul {
+  text-align: left;
+
+  @include breakpoint(laptop) {
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  @include breakpoint(laptop-l) {
+    display: block;
+  }
+}
+
+.l-menu li {
+  @include breakpoint(laptop) {
+    float: left;
+  }
+
+  @include breakpoint(laptop-l) {
+    float: none;
+  }
+}

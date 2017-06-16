@@ -3,21 +3,9 @@
 {% endcomment %}{% assign abouturl = site.baseurl | append: '/about.html' %}{% comment %}
 {% endcomment %}{% assign contacturl = site.baseurl | append: '/contact.html' %}{% comment %}
 
-{% endcomment %}<input class="l-header-menu-checkbox" id="l-header-menu-checkbox" type="checkbox">
+{% endcomment %}<div class="l-menu-backdrop"></div>
 
-<header class="l-header">
-  <{% if homeurl == pageurl %}h1{% else %}div{% endif %} class="l-header__logo">
-    <a href="{{ homeurl }}">Logo</a>
-  </{% if homeurl == pageurl %}h1{% else %}div{% endif %}>
-
-  <label class="l-header__menu" for="l-header-menu-checkbox"><i></i></label>
-</header>
-
-<div class="l-header-proxy"></div>
-
-<div class="l-header-shadow"></div>
-
-<nav class="l-header-nav">
+<nav class="l-menu">
   <ul>
     <li{% if homeurl == pageurl %} class="is-active"{% endif %}>
       <a href="{{ homeurl }}">Home</a>
@@ -30,7 +18,3 @@
     </li>
   </ul>
 </nav>
-
-<div class="l-header-nav-proxy"></div>
-
-<div class="l-header-nav-fade"></div>
