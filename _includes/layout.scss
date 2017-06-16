@@ -68,7 +68,7 @@ ul {
   }
 }
 
-.l-content-wrapper {
+.l-content {
   @include breakpoint(tablet) {
     float: left;
     width: 100% - $l-header-menu-width;
