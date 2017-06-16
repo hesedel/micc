@@ -28,6 +28,7 @@ ul {
 }
 
 .l-body {
+  max-width: $l-body-max-width;
   position: relative;
 
   @include breakpoint(tablet) {

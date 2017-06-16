@@ -151,7 +151,7 @@
     clear: left;
     display: block;
     float: left;
-    width: 20%; // @todo
+    width: $l-header-menu-width;
   }
 
   @include breakpoint(laptop) {
@@ -163,7 +163,7 @@
   @include breakpoint(laptop-l) {
     float: left;
     margin-right: 0;
-    width: 20%; // @todo
+    width: $l-header-menu-width;
   }
 }
 
