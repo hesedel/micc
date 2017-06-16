@@ -25,6 +25,10 @@
     min-width: $l-header-menu-width;
   }
 
+  @include breakpoint(laptop) {
+    min-width: 0;
+  }
+
   @include breakpoint(4k) {
     min-width: $l-header-nav-width;
   }
