@@ -15,11 +15,11 @@
     width: $l-menu-width;
   }
 
-  // @include breakpoint(laptop) {
-  //   float: none;
-  //   width: auto;
-  // }
-  //
+  @include breakpoint(laptop) {
+    float: none;
+    width: auto;
+  }
+
   // @include breakpoint(laptop-l) {
   //   float: left;
   //   margin-right: 0;

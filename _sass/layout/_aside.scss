@@ -5,8 +5,6 @@
   @include breakpoint(laptop) {
     clear: none;
     float: left;
-    left: $l-aside-width;
-    position: relative;
     width: $l-aside-width;
   }
 }

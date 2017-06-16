@@ -62,17 +62,17 @@ ul {
   // }
 }
 
-.l-content {
+.l-content-wrapper {
   @include breakpoint(tablet) {
     float: left;
     width: 100% - $l-menu-width;
   }
 
-  // @include breakpoint(laptop) {
-  //   margin-right: -$l-aside-width;
-  //   width: 100%;
-  // }
-  //
+  @include breakpoint(laptop) {
+    margin-right: -$l-aside-width;
+    width: 100%;
+  }
+
   // @include breakpoint(laptop-l) {
   //   width: 100% - $l-menu-width-2;
   // }
@@ -80,4 +80,10 @@ ul {
   // @include breakpoint(4k) {
   //   width: 100% - ($l-header-nav-width + $l-menu-width-2);
   // }
+}
+
+.l-content {
+  @include breakpoint(laptop) {
+    margin-right: $l-aside-width;
+  }
 }
