@@ -42,20 +42,20 @@ ul {
 
 .l-body__bg {
   background-color: $l-body-background-color;
+  -webkit-border-bottom-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  -webkit-border-top-right-radius: $border-radius;
+  border-top-right-radius: $border-radius;
   bottom: 0;
   display: none;
   left: 0;
   position: absolute;
-  right: 0;
+  right: $l-aside-width;
   top: 0;
   z-index: -1;
 
   @include breakpoint(laptop) {
     display: block;
-    -webkit-border-bottom-right-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
-    -webkit-border-top-right-radius: $border-radius;
-    border-top-right-radius: $border-radius;
   }
 
   // @include breakpoint(4k) {
