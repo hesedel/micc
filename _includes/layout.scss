@@ -33,6 +33,10 @@ ul {
   float: left;
   max-width: $l-body-max-width;
   width: 100%;
+
+  @include breakpoint(laptop) {
+    background-color: transparent;
+  }
 }
 
 .l-body__bg {
@@ -45,17 +49,14 @@ ul {
   top: 0;
   z-index: -1;
 
-  // @include breakpoint(tablet) {
-  //   display: block;
-  // }
-  //
-  // @include breakpoint(laptop) {
-  //   -webkit-border-bottom-right-radius: $border-radius;
-  //   border-bottom-right-radius: $border-radius;
-  //   -webkit-border-top-right-radius: $border-radius;
-  //   border-top-right-radius: $border-radius;
-  // }
-  //
+  @include breakpoint(laptop) {
+    display: block;
+    -webkit-border-bottom-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    -webkit-border-top-right-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+
   // @include breakpoint(4k) {
   //   left: $l-header-nav-width;
   //   top: $vertical-spacing-base;
