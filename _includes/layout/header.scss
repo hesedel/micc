@@ -30,9 +30,9 @@
     min-width: 0;
   }
 
-  // @include breakpoint(4k) {
-  //   min-width: $l-header-nav-width;
-  // }
+  @include breakpoint(4k) {
+    min-width: $l-header-nav-width;
+  }
 }
 
 // no-sticky
@@ -115,11 +115,11 @@
     margin-bottom: 0;
   }
 
-  // @include breakpoint(4k) {
-  //   clear: left;
-  //   height: auto;
-  //   width: $l-header-nav-width;
-  // }
+  @include breakpoint(4k) {
+    clear: left;
+    height: auto;
+    width: $l-header-nav-width;
+  }
 }
 
 .l-header-nav ul {
@@ -133,9 +133,9 @@
   float: left;
   height: 100%;
 
-  // @include breakpoint(4k) {
-  //   float: none;
-  // }
+  @include breakpoint(4k) {
+    float: none;
+  }
 }
 
 .l-header-nav a {
