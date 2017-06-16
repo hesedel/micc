@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'layout/vars';
 @import 'layout/vars.header';
+@import 'layout/vars.menu';
 @import 'layout/vars.aside';
 @import 'mixins';
 
@@ -71,7 +72,7 @@ ul {
 .l-content {
   @include breakpoint(tablet) {
     float: left;
-    width: 100% - $l-header-menu-width;
+    width: 100% - $l-menu-width;
   }
 
   @include breakpoint(laptop) {
@@ -80,10 +81,10 @@ ul {
   }
 
   @include breakpoint(laptop-l) {
-    width: 100% - $l-header-menu-width-2;
+    width: 100% - $l-menu-width-2;
   }
 
   @include breakpoint(4k) {
-    width: 100% - ($l-header-nav-width + $l-header-menu-width-2);
+    width: 100% - ($l-header-nav-width + $l-menu-width-2);
   }
 }
