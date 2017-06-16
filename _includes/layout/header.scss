@@ -23,6 +23,10 @@
     margin-bottom: 0;
     position: relative;
   }
+
+  @include breakpoint(4k) {
+    min-width: $l-header-nav-width;
+  }
 }
 
 // no-sticky
