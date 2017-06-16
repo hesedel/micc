@@ -26,10 +26,10 @@
     position: relative;
   }
 
-  // @include breakpoint(laptop) {
-  //   min-width: 0;
-  // }
-  //
+  @include breakpoint(laptop) {
+    min-width: 0;
+  }
+
   // @include breakpoint(4k) {
   //   min-width: $l-header-nav-width;
   // }

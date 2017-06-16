@@ -41,9 +41,9 @@
     overflow: hidden;
   }
 
-  // @include breakpoint(laptop-l) {
-  //   display: block;
-  // }
+  @include breakpoint(laptop-l) {
+    display: block;
+  }
 }
 
 .l-menu li {
@@ -51,7 +51,7 @@
     float: left;
   }
 
-  // @include breakpoint(laptop-l) {
-  //   float: none;
-  // }
+  @include breakpoint(laptop-l) {
+    float: none;
+  }
 }
