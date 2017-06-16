@@ -148,6 +148,7 @@
 
   @include breakpoint(tablet) {
     line-height: $l-header-height-2;
+    padding-top: $vertical-spacing-base * 2;
   }
 }
 
