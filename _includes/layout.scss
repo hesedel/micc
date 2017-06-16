@@ -87,9 +87,3 @@ ul {
     width: 100% - ($l-header-nav-width + $l-header-menu-width);
   }
 }
-
-.l-content {
-  @include breakpoint(laptop) {
-    margin-right: $l-aside-width;
-  }
-}
