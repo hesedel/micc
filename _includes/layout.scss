@@ -29,7 +29,7 @@ ul {
 }
 
 .l-body {
-  background-color: %l-body-background-color;
+  background-color: $l-body-background-color;
   max-width: $l-body-max-width - $l-aside-width;
 
   @include breakpoint(tablet) {
