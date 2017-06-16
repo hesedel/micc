@@ -34,7 +34,9 @@ ul {
   clear: left;
 
   @include breakpoint(laptop) {
+    background-color: trasparent;
     margin-right: $l-aside-width;
+    position: relative;
   }
 
   @include breakpoint(4k) {
@@ -61,18 +63,18 @@ ul {
   display: none;
   left: 0;
   position: absolute;
-  right: $l-aside-width;
+  right: 0;
   top: 0;
   z-index: -1;
 
-  // @include breakpoint(laptop) {
-  //   display: block;
-  // }
+  @include breakpoint(laptop) {
+    display: block;
+  }
 
-  // @include breakpoint(4k) {
-  //   left: $l-header-nav-width;
-  //   top: $vertical-spacing-base;
-  // }
+  @include breakpoint(4k) {
+    right: $l-aside-width;
+    top: -($l-header-height-2 - $vertical-spacing-base);
+  }
 }
 
 .l-content-wrapper {
@@ -88,5 +90,11 @@ ul {
 
   @include breakpoint(laptop-l) {
     width: 100% - $l-menu-width-2;
+  }
+}
+
+.l-content {
+  @include breakpoint(4k) {
+    margin-right: $l-aside-width;
   }
 }
