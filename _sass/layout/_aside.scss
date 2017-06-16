@@ -1,4 +1,5 @@
 @import 'vars.aside';
+@import '../mixins';
 
 .l-aside {
   @include breakpoint(laptop) {
