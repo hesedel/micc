@@ -34,7 +34,7 @@ ul {
   clear: left;
 
   @include breakpoint(laptop) {
-    background-color: trasparent;
+    background-color: transparent;
     margin-right: $l-aside-width;
     position: relative;
   }
