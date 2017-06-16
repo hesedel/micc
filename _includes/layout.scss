@@ -81,9 +81,9 @@ ul {
     width: 100%;
   }
 
-  // @include breakpoint(laptop-l) {
-  //   width: 100% - $l-menu-width-2;
-  // }
+  @include breakpoint(laptop-l) {
+    width: 100% - $l-menu-width-2;
+  }
 
   // @include breakpoint(4k) {
   //   width: 100% - ($l-header-nav-width + $l-menu-width-2);
