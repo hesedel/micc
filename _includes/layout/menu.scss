@@ -22,12 +22,12 @@
     width: auto;
   }
 
-  // @include breakpoint(laptop-l) {
-  //   float: left;
-  //   margin-right: 0;
-  //   width: $l-menu-width-2;
-  // }
-  //
+  @include breakpoint(laptop-l) {
+    float: left;
+    margin-right: 0;
+    width: $l-menu-width-2;
+  }
+
   // @include breakpoint(4k) {
   //   clear: none;
   // }
