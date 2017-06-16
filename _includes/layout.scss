@@ -80,10 +80,10 @@ ul {
   }
 
   @include breakpoint(laptop-l) {
-    width: 100% - $l-header-menu-width;
+    width: 100% - $l-header-menu-width-2;
   }
 
   @include breakpoint(4k) {
-    width: 100% - ($l-header-nav-width + $l-header-menu-width);
+    width: 100% - ($l-header-nav-width + $l-header-menu-width-2);
   }
 }

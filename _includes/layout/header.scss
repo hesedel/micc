@@ -185,7 +185,7 @@
   @include breakpoint(laptop-l) {
     float: left;
     margin-right: 0;
-    width: $l-header-menu-width;
+    width: $l-header-menu-width-2;
   }
 
   @include breakpoint(4k) {
