@@ -26,6 +26,7 @@
   }
 
   @include breakpoint(laptop) {
+    height: $l-header-height-2;
     min-width: 0;
   }
 
@@ -112,6 +113,10 @@
     float: left;
     height: $l-header-height;
     margin-bottom: 0;
+  }
+
+  @include breakpoint(laptop) {
+    height: $l-header-height-2;
   }
 
   @include breakpoint(4k) {

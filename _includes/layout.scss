@@ -52,6 +52,7 @@ ul {
     -webkit-border-top-right-radius: $border-radius;
     border-top-right-radius: $border-radius;
     right: $l-aside-width;
+    top: $l-header-height-2;
   }
 
   @include breakpoint(4k) {
