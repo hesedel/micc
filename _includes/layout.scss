@@ -30,16 +30,9 @@ ul {
 
 .l-body {
   background-color: $l-body-background-color;
-  clear: left;
   float: left;
   max-width: $l-body-max-width;
   width: 100%;
-
-  @include breakpoint(tablet) {
-    background-color: transparent;
-    clear: left;
-    position: relative;
-  }
 }
 
 .l-body__bg {
