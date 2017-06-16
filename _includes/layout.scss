@@ -30,14 +30,19 @@ ul {
 
 .l-body {
   background-color: $l-body-background-color;
-  float: left;
-  max-width: $l-body-max-width;
-  width: 100%;
+  max-width: $l-body-max-width - $l-aside-width;
 
   @include breakpoint(laptop) {
-    background-color: transparent;
-    position: relative;
+    // background-color: transparent;
+    margin-right: $l-aside-width;
+    // position: relative;
   }
+}
+
+.l-body::after {
+  clear: left;
+  content: '';
+  display: block;
 }
 
 .l-body__bg {
@@ -54,9 +59,9 @@ ul {
   top: 0;
   z-index: -1;
 
-  @include breakpoint(laptop) {
-    display: block;
-  }
+  // @include breakpoint(laptop) {
+  //   display: block;
+  // }
 
   // @include breakpoint(4k) {
   //   left: $l-header-nav-width;
@@ -64,7 +69,7 @@ ul {
   // }
 }
 
-.l-content-wrapper {
+.l-content {
   @include breakpoint(tablet) {
     float: left;
     width: 100% - $l-menu-width;
@@ -75,17 +80,11 @@ ul {
     width: 100%;
   }
 
-  @include breakpoint(laptop-l) {
-    width: 100% - $l-menu-width-2;
-  }
+  // @include breakpoint(laptop-l) {
+  //   width: 100% - $l-menu-width-2;
+  // }
 
   // @include breakpoint(4k) {
   //   width: 100% - ($l-header-nav-width + $l-menu-width-2);
   // }
-}
-
-.l-content {
-  @include breakpoint(laptop) {
-    margin-right: $l-aside-width;
-  }
 }
