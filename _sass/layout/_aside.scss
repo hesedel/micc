@@ -9,4 +9,9 @@
     position: relative;
     width: $l-aside-width;
   }
+
+  @include breakpoint(4k) {
+    left: 0;
+    position: static;
+  }
 }

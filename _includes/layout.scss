@@ -38,6 +38,7 @@ ul {
   }
 
   @include breakpoint(4k) {
+    clear: none;
     float: left;
     margin-right: 0;
     width: 100% - $l-header-nav-width;
