@@ -36,6 +36,7 @@ ul {
 
   @include breakpoint(laptop) {
     background-color: transparent;
+    position: relative;
   }
 }
 
