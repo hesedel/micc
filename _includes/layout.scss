@@ -46,13 +46,16 @@ ul {
   top: $l-header-height;
   z-index: -1;
 
+  @include breakpoint(tablet) {
+    top: $l-header-height-2;
+  }
+
   @include breakpoint(laptop) {
     -webkit-border-bottom-right-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
     -webkit-border-top-right-radius: $border-radius;
     border-top-right-radius: $border-radius;
     right: $l-aside-width;
-    top: $l-header-height-2;
   }
 
   @include breakpoint(4k) {
