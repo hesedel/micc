@@ -1,4 +1,5 @@
 @import '../vars';
+@import 'vars.header';
 @import 'vars.menu';
 @import 'vars.aside';
 
@@ -11,6 +12,11 @@
     margin-left: 0;
     margin-right: $l-aside-width;
   }
+
+  @include breakpoint(4k) {
+    margin-left: $l-header-nav-width;
+    margin-right: 0;
+  }
 }
 
 .l-footer-wrapper {
@@ -20,8 +26,10 @@
 }
 
 .l-footer {
+  padding-bottom: $base-height * 2;
   padding-left: $gutter-width;
   padding-right: $gutter-width;
+  padding-top: $base-height * 2;
 
   @include breakpoint(tablet) {
     padding-left: 11%;
@@ -29,5 +37,9 @@
 
   @include breakpoint(laptop) {
     padding-left: $gutter-width;
+  }
+
+  @include breakpoint(4k) {
+    margin-right: $l-aside-width;
   }
 }
