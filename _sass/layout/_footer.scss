@@ -1,6 +1,33 @@
 @import '../vars';
+@import 'vars.menu';
+@import 'vars.aside';
+
+.l-footer-wrapper-2 {
+  @include breakpoint(tablet) {
+    margin-left: 20%;
+  }
+
+  @include breakpoint(laptop) {
+    margin-left: 0;
+    margin-right: $l-aside-width;
+  }
+}
+
+.l-footer-wrapper {
+  @include breakpoint(laptop-l) {
+    margin-left: $l-menu-width-2;
+  }
+}
 
 .l-footer {
   padding-left: $gutter-width;
   padding-right: $gutter-width;
+
+  @include breakpoint(tablet) {
+    padding-left: 11%;
+  }
+
+  @include breakpoint(laptop) {
+    padding-left: $gutter-width;
+  }
 }
