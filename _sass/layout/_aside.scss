@@ -1,9 +1,12 @@
 @import 'vars.aside';
 @import '../mixins';
 
-.l-aside {
+.l-aside-wrapper {
+  display: none;
+
   @include breakpoint(laptop) {
     clear: none;
+    display: block;
     float: right;
     left: $l-aside-width;
     position: relative;
@@ -14,4 +17,9 @@
     left: 0;
     position: static;
   }
+}
+
+.l-aside {
+  width: $l-aside-width - ($base-width * 3);
+  padding-left: $base-width * 2;
 }

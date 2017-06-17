@@ -27,8 +27,15 @@
   }
 }
 
-.l-menu ul {
+.l-menu > ul {
+  padding-left: $gutter-width;
+  padding-right: $gutter-width;
   text-align: left;
+
+  @include breakpoint(tablet) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   @include breakpoint(laptop) {
     display: inline-block;
@@ -40,12 +47,40 @@
   }
 }
 
-.l-menu li {
+.l-menu > ul > li {
+  @include breakpoint(tablet) {
+    border-left: $base-width solid transparent;
+  }
+
   @include breakpoint(laptop) {
+    border-left: 0;
     float: left;
   }
 
   @include breakpoint(laptop-l) {
+    border-left: $base-width solid transparent;
     float: none;
+  }
+}
+
+.l-menu a {
+  display: block;
+
+  @include breakpoint(tablet) {
+    padding-left: 20%;
+  }
+
+  @include breakpoint(laptop) {
+    padding-left: 0;
+  }
+
+  @include breakpoint(laptop-l) {
+    padding-left: 25%;
+  }
+}
+
+.l-menu ul ul {
+  @include breakpoint(laptop) {
+    display: none;
   }
 }

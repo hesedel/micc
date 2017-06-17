@@ -16,6 +16,14 @@ body {
   max-width: $body-max-width;
   min-height: 100%;
   position: relative;
+
+  @include breakpoint(tablet) {
+    padding-left: $base-width;
+  }
+
+  @include breakpoint(4k) {
+    padding-left: 0;
+  }
 }
 
 a {
@@ -73,7 +81,7 @@ ul {
 
   @include breakpoint(4k) {
     right: $l-aside-width;
-    top: -($l-header-height-2 - $vertical-spacing-base);
+    top: -($l-header-height-2 - $base-height);
   }
 }
 
@@ -94,6 +102,17 @@ ul {
 }
 
 .l-content {
+  padding-left: $gutter-width;
+  padding-right: $gutter-width;
+
+  @include breakpoint(tablet) {
+    padding-left: 11%;
+  }
+
+  @include breakpoint(laptop) {
+    padding-left: $gutter-width;
+  }
+
   @include breakpoint(4k) {
     margin-right: $l-aside-width;
   }

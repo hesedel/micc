@@ -60,7 +60,7 @@
   z-index: 1;
 }
 
-.l-menu ul {
+.l-menu > ul {
   opacity: 0;
   -webkit-transition: opacity ($transition-duration * .5);
   transition: opacity ($transition-duration * .5);
@@ -70,7 +70,7 @@
   }
 }
 
-.l-header-menu-checkbox:checked ~ .l-body .l-menu ul {
+.l-header-menu-checkbox:checked ~ .l-body .l-menu > ul {
   opacity: 1;
   -webkit-transition: opacity $transition-duration ($transition-duration * 1.5);
   transition: opacity $transition-duration ($transition-duration * 1.5);

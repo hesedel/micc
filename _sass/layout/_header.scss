@@ -145,7 +145,7 @@
   background-image: linear-gradient(rgba($l-header-nav-background-color, 1), rgba($l-header-nav-background-color, 0));
   content: '';
   display: block;
-  height: $vertical-spacing-base;
+  height: $base-height;
   position: -webkit-sticky;
   position: sticky;
   top: $l-header-height;
