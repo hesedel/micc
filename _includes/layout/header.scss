@@ -16,7 +16,7 @@
   position: sticky;
   right: 0;
   top: 0;
-  z-index: 3;
+  z-index: $l-header-z-index + 2;
 
   @include breakpoint(tablet) {
     float: left;
@@ -37,7 +37,7 @@
 
 // no-sticky
 .l-header {
-//   position: fixed;
+  // position: fixed;
 }
 
 .l-header-proxy {

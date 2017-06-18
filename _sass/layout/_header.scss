@@ -55,7 +55,7 @@
   position: sticky;
   right: 0;
   top: $l-header-height;
-  z-index: 1;
+  z-index: $l-header-z-index;
 
   @include breakpoint(tablet) {
     display: none;
@@ -64,7 +64,7 @@
 
 // no-sticky
 .l-header-shadow {
-//   position: fixed;
+  // position: fixed;
 }
 
 .l-header-nav {
@@ -76,7 +76,7 @@
   top: 0;
   -webkit-transition: background-color $transition-duration $transition-duration, top $transition-duration;
   transition: background-color $transition-duration $transition-duration, top $transition-duration;
-  z-index: 2;
+  z-index: $l-header-z-index + 1;
 
   @include breakpoint(tablet) {
     position: relative;
@@ -85,7 +85,7 @@
 
 // no-sticky
 .l-header-nav {
-//   position: relative;
+  // position: relative;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav {
@@ -106,7 +106,7 @@
 
 // no-sticky
 .l-header-menu-checkbox:checked ~ .l-header-nav {
-//   position: fixed;
+  // position: fixed;
 }
 
 .l-header-nav-proxy {
@@ -114,7 +114,7 @@
   position: relative;
   -webkit-transition: background-color $transition-duration $transition-duration;
   transition: background-color $transition-duration $transition-duration;
-  z-index: 1;
+  z-index: $l-header-z-index;
 }
 
 .l-header-menu-checkbox:checked ~ .l-header-nav-proxy {
@@ -149,10 +149,10 @@
   position: -webkit-sticky;
   position: sticky;
   top: $l-header-height;
-  z-index: 2;
+  z-index: $l-header-z-index + 1;
 }
 
 // no-sticky
 .l-header-nav-fade::before {
-//   position: static;
+  // position: static;
 }

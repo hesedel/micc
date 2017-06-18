@@ -39,6 +39,7 @@ ul {
 .l-body {
   background-color: $l-body-background-color;
   clear: left;
+  position: relative;
 
   @include breakpoint(laptop) {
     background-color: transparent;
@@ -95,6 +96,7 @@ ul {
 }
 
 .l-content {
+  height: 1000px;
   padding-left: $gutter-width;
   padding-right: $gutter-width;
 
