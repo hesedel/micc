@@ -1,8 +1,21 @@
 ---
 ---
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 @import 'layout/header';
 @import 'layout/menu';
+
+.l-body__bg {
+  -webkit-border-bottom-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  -webkit-border-top-right-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  box-shadow: 0 0 $base-height 1px rgba(black, .05);
+}
 
 @import 'layout/aside';
 @import 'layout/footer';

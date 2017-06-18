@@ -15,10 +15,9 @@ body {
   margin: 0;
   max-width: $body-max-width;
   min-height: 100%;
-  position: relative;
 
   @include breakpoint(tablet) {
-    padding-left: $base-width;
+    margin-left: $base-width;
   }
 
   @include breakpoint(4k) {
@@ -63,10 +62,6 @@ ul {
 
 .l-body__bg {
   background-color: $l-body-background-color;
-  -webkit-border-bottom-right-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
-  -webkit-border-top-right-radius: $border-radius;
-  border-top-right-radius: $border-radius;
   bottom: 0;
   display: none;
   left: 0;

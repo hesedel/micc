@@ -139,11 +139,11 @@
   height: 100%;
 
   @include breakpoint(tablet) {
-    border-right: 1px solid darken($body-background-color, 7.5%);
+    border-right: 1px solid rgba(black, .05);
   }
 
   @include breakpoint(4k) {
-    border-bottom: 1px solid darken($body-background-color, 7.5%);
+    border-bottom: 1px solid rgba(black, .05);
     border-right: 0;
     float: none;
   }
@@ -158,6 +158,7 @@
 }
 
 .l-header-nav a {
+  color: rgba(black, .25);
   display: block;
   height: 100%;
   line-height: $l-header-nav-height;
