@@ -17,7 +17,7 @@ body {
   min-height: 100%;
 
   @include breakpoint(tablet) {
-    margin-left: $base-width;
+    padding-left: $base-width;
   }
 
   @include breakpoint(4k) {
