@@ -1,15 +1,24 @@
 ---
 ---
 
+@import 'layout/vars';
+@import 'mixins';
+
 @import 'layout/header';
 @import 'layout/menu';
+
+.l-body {
+  @include breakpoint(laptop) {
+    // overflow: hidden; // causes aside to push down background
+  }
+}
 
 .l-body__bg {
   -webkit-border-bottom-right-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
   -webkit-border-top-right-radius: $border-radius;
   border-top-right-radius: $border-radius;
-  box-shadow: 0 0 $base-height 1px rgba(black, .05);
+  box-shadow: 0 0 $l-body-box-shadow-blur $l-body-box-shadow-spread rgba(black, .05);
 }
 
 @import 'layout/aside';

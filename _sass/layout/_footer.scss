@@ -15,7 +15,6 @@
 
   @include breakpoint(4k) {
     margin-left: $l-header-nav-width;
-    margin-right: 0;
   }
 }
 
@@ -40,6 +39,11 @@
   }
 
   @include breakpoint(4k) {
-    margin-right: $l-aside-width;
+
+  }
+
+  @include breakpoint(1600px) {
+    padding-left: 11%;
+    padding-right: 11%;
   }
 }
