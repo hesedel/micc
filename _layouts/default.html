@@ -13,9 +13,9 @@
 {% capture critical %}{% include layout.scss %}{% include layout/header.scss %}{% include layout/menu.scss %}{% include layout/aside.scss %}{% include layout/footer.scss %}{% endcapture %}{{ critical | scssify }}</style>
 
 <noscript>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css?{{site.time | date: '%s'}}">
 </noscript>
-<link rel="preload" as="style" href="{{ site.baseurl }}/css/layout.css?{{site.time | date: '%s'}}" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="{{ site.baseurl }}/css/styles.css?{{site.time | date: '%s'}}" onload="this.rel='stylesheet'">
 <script>
   (function (document) {
     var isPreloadSupported = (function () {
