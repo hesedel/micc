@@ -7,20 +7,20 @@
 @import 'layout/header';
 @import 'layout/menu';
 
-.l-body {
+.l-body__bg::before {
   box-shadow: 0 0 $l-body-box-shadow-blur $l-body-box-shadow-spread rgba(black, .05);
 
   @include breakpoint(laptop) {
-    box-shadow: none;
+    -webkit-border-bottom-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    -webkit-border-top-right-radius: $border-radius;
+    border-top-right-radius: $border-radius;
   }
-}
 
-.l-body__bg {
-  -webkit-border-bottom-right-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
-  -webkit-border-top-right-radius: $border-radius;
-  border-top-right-radius: $border-radius;
-  box-shadow: 0 0 $l-body-box-shadow-blur $l-body-box-shadow-spread rgba(black, .05);
+  @include breakpoint(4k) {
+    -webkit-border-bottom-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
 }
 
 @import 'layout/aside';

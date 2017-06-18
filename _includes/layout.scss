@@ -41,10 +41,12 @@ ul {
   clear: left;
   position: relative;
 
-  @include breakpoint(laptop) {
+  @include breakpoint(tablet) {
     background-color: transparent;
+  }
+
+  @include breakpoint(laptop) {
     padding-right: $l-aside-width;
-    position: relative;
   }
 
   @include breakpoint(4k) {
@@ -60,22 +62,44 @@ ul {
 }
 
 .l-body__bg {
-  background-color: $l-body-background-color;
-  bottom: 0;
+  bottom: -($l-body-box-shadow-blur + $l-body-box-shadow-spread);
   display: none;
   left: 0;
+  overflow: hidden;
   position: absolute;
-  right: $l-aside-width;
-  top: 0;
+  right: 0;
+  top: -($l-body-box-shadow-blur + $l-body-box-shadow-spread);
   z-index: -1;
 
-  @include breakpoint(laptop) {
+  @include breakpoint(tablet) {
     display: block;
   }
 
+  @include breakpoint(laptop) {
+    right: $l-aside-width - ($l-body-box-shadow-blur + $l-body-box-shadow-spread);
+  }
+
   @include breakpoint(4k) {
-    right: $l-aside-width;
-    top: $base-height;
+    left: -($l-body-box-shadow-blur + $l-body-box-shadow-spread);
+    top: $base-height - ($l-body-box-shadow-blur + $l-body-box-shadow-spread);
+  }
+}
+
+.l-body__bg::before {
+  background-color: $l-body-background-color;
+  bottom: $l-body-box-shadow-blur + $l-body-box-shadow-spread;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: $l-body-box-shadow-blur + $l-body-box-shadow-spread;
+
+  @include breakpoint(laptop) {
+    right: $l-body-box-shadow-blur + $l-body-box-shadow-spread;
+  }
+
+  @include breakpoint(4k) {
+    left: $l-body-box-shadow-blur + $l-body-box-shadow-spread;
   }
 }
 
@@ -96,7 +120,6 @@ ul {
 }
 
 .l-content {
-  height: 1000px;
   padding-left: $gutter-width;
   padding-right: $gutter-width;
 
