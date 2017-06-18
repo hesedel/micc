@@ -1,8 +1,22 @@
-.w-img {
+@import 'vars';
 
+.w-img {
+  background-color: $body-background-color;
+  position: relative;
 }
 
 .w-img img {
   display: block;
+  width: 100%;
+}
+
+.w-img.has-dimensions img {
+  position: absolute;
+}
+
+.w-img canvas {
+  display: block;
+  height: 0;
+  position: relative;
   width: 100%;
 }

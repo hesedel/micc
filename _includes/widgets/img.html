@@ -1,7 +1,10 @@
-<figure class="w-img">
+{% if include.width and include.height %}
+  {% assign hasDimensions = true %}
+{% endif %}{% comment %}
+{% endcomment %}<figure class="js-w-img w-img{% if hasDimensions %} has-dimensions{% endif %}{% if include.class %} {{include.class}}{% endif %}">
   <noscript>
-    <img src="{{ include.src | uri_escape }}" alt="">
+    <img src="{{ include.src | uri_escape }}" alt="{{ include.alt }}">
   </noscript>
-  <img src="{{ include.src | uri_escape}}" alt="">
-  <canvas></canvas>
+  <img src="{{ include.src | uri_escape}}" alt="{{ include.alt }}">
+  <canvas{% if hasDimensions %} style="padding-top:{{ 100.0 | times: include.height | divided_by: include.width }}%"{% endif %}></canvas>
 </figure>
