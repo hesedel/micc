@@ -3,7 +3,7 @@
 
 html,
 body {
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 @import 'layout/header';
@@ -15,6 +15,10 @@ body {
   -webkit-border-top-right-radius: $border-radius;
   border-top-right-radius: $border-radius;
   box-shadow: 0 0 $base-height 1px rgba(black, .05);
+}
+
+.l-content {
+  height: 1000px;
 }
 
 @import 'layout/aside';
