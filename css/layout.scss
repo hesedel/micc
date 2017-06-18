@@ -8,8 +8,10 @@
 @import 'layout/menu';
 
 .l-body {
+  box-shadow: 0 0 $l-body-box-shadow-blur $l-body-box-shadow-spread rgba(black, .05);
+
   @include breakpoint(laptop) {
-    // overflow: hidden; // causes aside to push down background
+    box-shadow: none;
   }
 }
 
