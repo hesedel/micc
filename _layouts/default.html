@@ -32,10 +32,14 @@
 
     setTimeout(function () {
       var i;
+      var link;
       var links = document.getElementsByTagName('link');
       for (i = 0; i < links.length; i += 1) {
         if ('preload' === links[i].rel) {
-          links[i].rel = 'stylesheet';
+          link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = links[i].href;
+          document.head.appendChild(link);
         }
       }
     }, 1);
