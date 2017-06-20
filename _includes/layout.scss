@@ -25,6 +25,15 @@ body {
   }
 }
 
+// html5
+aside,
+header,
+footer,
+main,
+nav {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
@@ -124,7 +133,6 @@ ul {
 }
 
 .l-content {
-  display: block;
   padding-left: $gutter-width;
   padding-right: $gutter-width;
 
