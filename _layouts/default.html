@@ -36,6 +36,7 @@
       var links = document.getElementsByTagName('link');
       for (i = 0; i < links.length; i += 1) {
         if ('preload' === links[i].rel) {
+          // we create a new element because just changing rel causes ie to glitch
           link = document.createElement('link');
           link.rel = 'stylesheet';
           link.href = links[i].href;
