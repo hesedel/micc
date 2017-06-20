@@ -25,15 +25,6 @@ body {
   }
 }
 
-// html5
-aside,
-header,
-footer,
-main,
-nav {
-  display: block;
-}
-
 a {
   text-decoration: none;
 }
@@ -47,6 +38,15 @@ ul {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
+}
+
+// html5
+aside,
+header,
+footer,
+main,
+nav {
+  display: block;
 }
 
 .l-body {
