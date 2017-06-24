@@ -2,4 +2,5 @@ cloudinary:
   account: 'pajaroncreative'
   path: 'test'
   url: 'https://hesedel.github.io'
+  width: 822
 path: 'assets/img/'
