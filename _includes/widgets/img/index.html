@@ -1,15 +1,24 @@
 {% if include.width and include.height %}
   {% assign hasDimensions = true %}
-{% endif %}
-{% assign src = include.src | prepend: site.data.widgets.img.path | prepend: '/' | prepend: site.baseurl %}
-{% if site.data.widgets.img.cloudinary.url == site.url %}
-  {% assign src = include.src | prepend: '/' | prepend: site.data.widgets.img.cloudinary.path | prepend: '/' | prepend: site.data.widgets.img.cloudinary.width | prepend: '/image/upload/w_' | prepend: site.data.widgets.img.cloudinary.account | prepend: 'http://res.cloudinary.com/' %}
 {% endif %}{% comment %}
-{% endcomment %}<figure class="js-w-img w-img{% if hasDimensions %} has-dimensions{% endif %}{% if include.class %} {{include.class}}{% endif %}">
+
+{% endcomment %}{% capture data-src %}{{ site.baseurl }}/{{ site.data.widgets.img.path }}{{ include.src }}{% endcapture %}{% comment %}
+
+{% endcomment %}{% if site.data.widgets.img.cloudinary.url == site.url %}
+  {% assign isCloudinaryEnabled = true %}
+{% endif %}{% comment %}
+
+{% endcomment %}{% if isCloudinaryEnabled %}
+  {% capture srcPrefix %}http://res.cloudinary.com/{{site.data.widgets.img.cloudinary.account}}/image/upload/{% endcapture %}
+  {% capture src %}{{ srcPrefix }}w_20,q_50/{{ site.data.widgets.img.cloudinary.path }}/{{ include.src }}{% endcapture %}
+  {% capture data-src %}{{ srcPrefix }}w_{% if include.width %}{{ include.width }}{% else %}{{ site.data.widgets.img.cloudinary.width }}{% endif %},q_{{ site.data.widgets.img.cloudinary.quality }}/{{ site.data.widgets.img.cloudinary.path }}/{{ include.src }}{% endcapture %}
+{% endif %}{% comment %}
+
+{% endcomment %}<figure class="js-w-img w-img{% if hasDimensions %} has-dimensions{% endif %}{% if include.class %} {{include.class}}{% endif %}">{% if isCloudinaryEnabled %}
   <noscript>
-    <img src="{{ src | uri_escape }}" alt="{{ include.alt }}">
-  </noscript>
-  <img src="{% if include.data-src %}{{ include.data-src }}{% else %}data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=={% endif %}" alt="{{ include.alt }}" data-src="{{ src }}">{% if hasDimensions %}
-  <canvas></canvas>
+    <img src="{{ data-src }}" alt="{{ include.alt }}">
+  </noscript>{% endif %}
+  <img src="{% if isCloudinaryEnabled %}{{ src }}{% else %}{{ data-src }}{% endif %}" alt="{{ include.alt }}"{% if isCloudinaryEnabled %} data-src="{{ data-src }}" crossOrigin{% endif %}>{% if isCloudinaryEnabled %}
+  <canvas></canvas>{% endif %}{% if hasDimensions %}
   <div style="padding-top:{{ 100.0 | times: include.height | divided_by: include.width }}%"></div>{% endif %}
 </figure>

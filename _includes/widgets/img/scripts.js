@@ -6,49 +6,87 @@
   /** @type {number} */
   var i;
 
-  /** @type {HTMLElement} */
-  var canvas,
-      figure,
-      img;
-
   /** @type {HTMLCollection} */
-  var figures = document.getElementsByClassName('js-w-img');
+  var imgs = document.getElementsByClassName('js-w-img');
 
   /**
-   * @function
-   * @private
-   * @param {HTMLElement} img
+   * @constructor
+   * @param {HTMLElement img}
    */
-  function getImageSize(img) {
-    var vImg = document.createElement('img');
-    vImg.setAttribute('crossOrigin', '');
-    vImg.src = img.getAttribute('src');
-    vImg.onload = function () {
-      canvas.width = vImg.width;
-      canvas.height = vImg.height;
-      var ctx = canvas.getContext('2d');
-      ctx.drawImage(vImg, 0, 0, vImg.width, vImg.height);
-      StackBlur.canvasRGB(canvas, 0, 0, vImg.width, vImg.height, 100);
+  var Img = (function () {
+    function __construct (img) {
+      this.figure = img;
+      this.img = img.getElementsByTagName('img')[0];
+      this.canvas = img.getElementsByTagName('canvas')[0];
+
+      if (!this.canvas) {
+        return;
+      }
+
+      this.loadSrc();
+      this.loadDataSrc();
+    }
+
+    /**
+     * @function
+     */
+    __construct.prototype.loadSrc = function () {
+      if (this.img.complete) {
+        this.onSrcLoad();
+
+        return;
+      }
+
+      this.img.addEventListener('load', this.onSrcLoad);
     };
+
+    /**
+     * @function
+     */
+    __construct.prototype.loadDataSrc = function () {
+      var img = document.createElement('img');
+
+      img.addEventListener('load', (function () {
+        this.onDataSrcLoad(img);
+      }).bind(this));
+
+      img.src = this.img.getAttribute('data-src');
+    };
+
+    /**
+     * @function
+     * @param {HTMLElement} img
+     */
+    __construct.prototype.onDataSrcLoad = function (img) {
+      this.figure.insertBefore(img, this.canvas);
+      this.figure.setAttribute('class', this.figure.getAttribute('class') + ' is-data-src-loaded');
+    }
+
+    /**
+     * @function
+     */
+    __construct.prototype.onSrcLoad = function () {
+      this.figure.setAttribute('class', this.figure.getAttribute('class') + ' is-src-loaded');
+      this.renderCanvas();
+    }
+
+    /**
+     * @function
+     */
+    __construct.prototype.renderCanvas = function () {
+      var context = this.canvas.getContext('2d');
+
+      this.canvas.width = this.img.width;
+      this.canvas.height = this.img.height;
+      context.drawImage(this.img, 0, 0, this.canvas.width, this.canvas.height);
+      StackBlur.canvasRGB(this.canvas, 0, 0, this.canvas.width, this.canvas.height, 8);
+      this.figure.setAttribute('class', this.figure.getAttribute('class') + ' is-canvas-rendered');
+    };
+
+    return __construct;
+  })();
+
+  for (i = 0; i < imgs.length; i++) {
+    new Img(imgs[i]);
   }
-
-  /**
-   * @function
-   * @private
-   */
-  function onWindowScroll () {
-
-  }
-
-  for (i = 0; i < figures.length; i++) {
-    figure = figures[i];
-    img = figure.getElementsByTagName('img')[0];
-    canvas = figure.getElementsByTagName('canvas')[0];
-    getImageSize(img);
-
-    img.src = img.getAttribute('data-src');
-  }
-
-  window.addEventListener('scroll', onWindowScroll);
-  // window.removeEventListener('scroll', onWindowScroll);
 })(window, document);
