@@ -5,6 +5,7 @@
   <noscript>
     <img src="{{ include.src | uri_escape }}" alt="{{ include.alt }}">
   </noscript>
-  <img src="{{ include.src | uri_escape}}" alt="{{ include.alt }}">
-  <canvas{% if hasDimensions %} style="padding-top:{{ 100.0 | times: include.height | divided_by: include.width }}%"{% endif %}></canvas>
+  <img src="{% if include.data-src %}{{ include.data-src }}{% else %}data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=={% endif %}" alt="{{ include.alt }}" data-src="{{ include.src | uri_escape}}">{% if hasDimensions %}
+  <canvas></canvas>
+  <div style="padding-top:{{ 100.0 | times: include.height | divided_by: include.width }}%"></div>{% endif %}
 </figure>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 {% comment %}<script async src="https://cdn.ampproject.org/v0.js"></script>
-{% endcomment %}<link rel="canonical" href="{{ site.baseurl }}/">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel="canonical" href="{{ site.baseurl }}/">
+{% endcomment %}<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
 <title>{{ page.title }}</title>
 
@@ -64,6 +64,7 @@
 {% include layout/aside.html %}{% comment %}
 {% endcomment %}</div>
 
-{% include layout/footer.html %}{% comment %}
-{% endcomment %}</body>
+{% include layout/footer.html %}
+<script src="{{ site.baseurl }}/js/scripts.js?{{site.time | date: '%s'}}" async></script>
+</body>
 </html>

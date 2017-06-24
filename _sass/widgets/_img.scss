@@ -15,8 +15,10 @@
 }
 
 .w-img canvas {
-  display: block;
-  height: 0;
-  position: relative;
+  position: absolute;
   width: 100%;
+}
+
+.w-img.is-loaded canvas {
+  display: none;
 }
