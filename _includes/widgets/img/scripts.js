@@ -37,7 +37,7 @@
         return;
       }
 
-      this.img.addEventListener('load', this.onSrcLoad);
+      this.img.addEventListener('load', this.onSrcLoad.bind(this));
     };
 
     /**

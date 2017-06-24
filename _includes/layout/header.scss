@@ -156,7 +156,13 @@
   margin-left: -$base-width;
 
   @include breakpoint(tablet) {
+    border-left: 1px solid rgba(black, .05);
     margin-left: 0;
+  }
+
+  @include breakpoint(4k) {
+    border-left: 0;
+    border-top: 1px solid rgba(black, .05);
   }
 }
 
@@ -170,7 +176,7 @@
   text-decoration: none;
 
   @include breakpoint(tablet) {
-    height: $base-height * 4;
+    height: ($base-height * 4) - 1px;
     line-height: $base-height * 2;
     padding-left: $base-width * 1.5;
     padding-right: $base-width * 1.5;
@@ -182,6 +188,12 @@
     padding-bottom: ($base-height * 2) - 1px;
     padding-left: $base-width * 2.5;
     padding-top: $base-height * 2;
+  }
+}
+
+.l-header-nav li:first-child a {
+  @include breakpoint(4k) {
+    padding-top: ($base-height * 2) - 1px;
   }
 }
 

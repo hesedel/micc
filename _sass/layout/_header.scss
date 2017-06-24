@@ -109,6 +109,14 @@
   // position: fixed;
 }
 
+.l-header-nav a:hover,
+.l-header-nav .is-active a {
+  @include breakpoint(tablet) {
+    background-color: #ff6;
+    color: rgba(black, .5);
+  }
+}
+
 .l-header-nav-proxy {
   background-color: $l-header-nav-background-color;
   position: relative;

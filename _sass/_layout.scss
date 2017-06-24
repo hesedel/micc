@@ -4,6 +4,10 @@
 @import 'layout/header';
 @import 'layout/menu';
 
+body {
+  background-image: url(../assets/img/bg.gif);
+}
+
 .l-body__bg::before {
   box-shadow: 0 0 $l-body-box-shadow-blur $l-body-box-shadow-spread rgba(black, .05);
 
