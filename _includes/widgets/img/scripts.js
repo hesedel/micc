@@ -79,7 +79,7 @@
       this.canvas.width = this.img.width;
       this.canvas.height = this.img.height;
       context.drawImage(this.img, 0, 0, this.canvas.width, this.canvas.height);
-      StackBlur.canvasRGB(this.canvas, 0, 0, this.canvas.width, this.canvas.height, 8);
+      StackBlur.canvasRGB(this.canvas, 0, 0, this.canvas.width, this.canvas.height, 16);
       this.figure.setAttribute('class', this.figure.getAttribute('class') + ' is-canvas-rendered');
     };
 
