@@ -65,9 +65,13 @@
 
 .l-menu a {
   display: block;
+  padding-bottom: $base-height;
+  padding-top: $base-height;
 
   @include breakpoint(tablet) {
+    padding-bottom: $base-height * (2 / 3);
     padding-left: 20%;
+    padding-top: $base-height * (2 / 3);
   }
 
   @include breakpoint(laptop) {
