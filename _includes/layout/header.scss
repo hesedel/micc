@@ -1,5 +1,6 @@
 @import 'layout/vars.header';
 @import 'layout/vars.menu';
+@import 'layout/vars.aside';
 @import 'mixins';
 
 .l-header-menu-checkbox {
@@ -22,31 +23,32 @@
     float: left;
     height: $l-header-height-2;
     margin-bottom: 0;
-    min-width: $l-menu-width;
+    width: $l-menu-width;
     position: relative;
   }
 
   @include breakpoint(laptop) {
-    min-width: 0;
+    width: auto;
+  }
+
+  @include breakpoint(laptop-l) {
+    float: none;
+    height: 0;
+    margin-right: $l-aside-width;
   }
 
   @include breakpoint(4k) {
+    float: left;
+    height: $l-header-height-2;
+    margin-right: 0;
     margin-top: $base-height;
-    min-width: $l-header-nav-width;
+    width: $l-header-nav-width;
   }
 }
 
 // no-sticky
 .l-header {
   // position: fixed;
-}
-
-.l-header-proxy {
-  height: $l-header-height;
-
-  @include breakpoint(tablet) {
-    display: none;
-  }
 }
 
 .l-header__logo {
@@ -61,6 +63,33 @@
 
   @include breakpoint(laptop) {
     position: relative;
+  }
+
+  @include breakpoint(laptop-l) {
+    background-color: $l-header-background-color;
+    float: left;
+    height: $l-header-height-2;
+    left: 0;
+    top: 0;
+    -webkit-transform: none;
+    transform: none;
+    width: $l-menu-width-2;
+  }
+
+  @include breakpoint(4k) {
+    float: none;
+    width: auto;
+  }
+}
+
+.l-header__logo a {
+  @include breakpoint(laptop-l) {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -104,6 +133,14 @@
 
 .l-header__menu i::after {
   top: 13px;
+}
+
+.l-header-proxy {
+  height: $l-header-height;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 
 .l-header-nav {
@@ -185,6 +222,7 @@
 
   @include breakpoint(4k) {
     height: auto;
+    margin-right: 1px;
     padding-bottom: ($base-height * 2) - 1px;
     padding-left: $base-width * 2.5;
     padding-top: $base-height * 2;
