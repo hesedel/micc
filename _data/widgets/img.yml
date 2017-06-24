@@ -1,0 +1,4 @@
+cloudinary:
+  account: 'pajaroncreative'
+  path: 'test'
+path: 'assets/img/'

@@ -2,4 +2,4 @@
 ---
 
 @import 'layout';
-@import 'widgets';
+{% capture widgets %}{% include widgets/img/styles.css %}{% endcapture %}{{ widgets | scssify }}

@@ -1,4 +1,4 @@
 ---
 ---
 
-{% include widgets/img.js %}
+{% include widgets/img/scripts.js %}

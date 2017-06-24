@@ -1,7 +1,5 @@
-@import 'vars';
-
 .w-img {
-  background-color: $body-background-color;
+  background-color: black;
   position: relative;
 }
 

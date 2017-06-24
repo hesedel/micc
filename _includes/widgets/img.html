@@ -1,11 +1,6 @@
-{% if include.width and include.height %}
-  {% assign hasDimensions = true %}
-{% endif %}{% comment %}
-{% endcomment %}<figure class="js-w-img w-img{% if hasDimensions %} has-dimensions{% endif %}{% if include.class %} {{include.class}}{% endif %}">
-  <noscript>
-    <img src="{{ include.src | uri_escape }}" alt="{{ include.alt }}">
-  </noscript>
-  <img src="{% if include.data-src %}{{ include.data-src }}{% else %}data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=={% endif %}" alt="{{ include.alt }}" data-src="{{ include.src | uri_escape}}">{% if hasDimensions %}
-  <canvas></canvas>
-  <div style="padding-top:{{ 100.0 | times: include.height | divided_by: include.width }}%"></div>{% endif %}
-</figure>
+{% include widgets/img/index.html
+  width=include.width
+  height=include.height
+  src=include.src
+  alt=include.alt
+%}
