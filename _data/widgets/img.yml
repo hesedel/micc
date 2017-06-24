@@ -1,4 +1,6 @@
 cloudinary:
   account: 'pajaroncreative'
   path: 'test'
+  urls:
+    - 'https://hesedel.github.io/smashing-magazine'
 path: 'assets/img/'
