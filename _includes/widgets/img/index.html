@@ -2,7 +2,7 @@
   {% assign hasDimensions = true %}
 {% endif %}
 {% assign src = include.src | prepend: site.data.widgets.img.path | prepend: '/' | prepend: site.baseurl %}
-{% if siate.data.widgets.img.cloudinary.url == site.url %}
+{% if site.data.widgets.img.cloudinary.url == site.url %}
   {% assign src = include.src | prepend: '/' | prepend: site.data.widgets.img.cloudinary.path | prepend: '/' | prepend: site.data.widgets.img.cloudinary.width | prepend: '/image/upload/w_' | prepend: site.data.widgets.img.cloudinary.account | prepend: 'http://res.cloudinary.com/' %}
 {% endif %}{% comment %}
 {% endcomment %}<figure class="js-w-img w-img{% if hasDimensions %} has-dimensions{% endif %}{% if include.class %} {{include.class}}{% endif %}">
