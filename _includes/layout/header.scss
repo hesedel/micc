@@ -28,6 +28,8 @@
   }
 
   @include breakpoint(laptop) {
+    padding-left: $base-width * 2;
+    padding-right: $base-width * 2;
     width: auto;
   }
 
@@ -35,6 +37,8 @@
     float: none;
     height: 0;
     margin-right: $l-aside-width;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @include breakpoint(4k) {
