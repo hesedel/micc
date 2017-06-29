@@ -5,3 +5,5 @@ defaults:
       image: true
 sass:
   style: compressed
+prose:
+  ['_layouts', '_config.yml']
