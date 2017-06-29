@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+{% assign cachebuster = site.time | date: '%s' %}{% comment %}
+
+{% endcomment %}<!DOCTYPE html><!DOCTYPE html>
 <html{% comment %} amp{% endcomment %} lang="en">
 <head>
 <meta charset="utf-8">
@@ -21,9 +23,9 @@
 {% endcomment %}</style>
 
 <noscript>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css?{{site.time | date: '%s'}}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css?{{ cachebuster }}">
 </noscript>
-<link rel="preload" as="style" href="{{ site.baseurl }}/css/styles.css?{{site.time | date: '%s'}}" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="{{ site.baseurl }}/css/styles.css?{{ cachebuster }}" onload="this.rel='stylesheet'">
 <script>
   (function (document) {
     var isPreloadSupported = (function () {
@@ -72,6 +74,6 @@
 {% endcomment %}</div>
 
 {% include layout/footer.html %}
-<script src="{{ site.baseurl }}/js/scripts.js?{{site.time | date: '%s'}}" async></script>
+<script src="{{ site.baseurl }}/js/scripts.js?{{ cachebuster }}" async></script>
 </body>
 </html>
