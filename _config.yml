@@ -6,4 +6,4 @@ defaults:
 sass:
   style: compressed
 prose:
-  ['_layouts', '_config.yml']
+  ignore: ['_layouts', '_config.yml']
